@@ -19,6 +19,11 @@ html, body {
   overscroll-behavior-y: none;
 }
 
+td, th {
+  border: 2px red solid;
+  margin: 0.5em;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -81,12 +86,12 @@ header a:hover {
   cursor: pointer;
 }
 
-#engjournal-button {
+#devblog-button {
   margin-left: 16px;
   cursor: pointer;
 }
 
-#engjournal {
+#devblog {
   background-color: #aaa;
   padding: 0.5em 1em;
 }
