@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="image/jaimccoy.png">
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <title>Jai McCoy -Computer Science</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="menu-items">
+        <div id="journal-button" onclick="toggle('journal','journal-button','Journal')"> Journal</div>
+        <div id="projects-button" onclick="toggle('projects','projects-button','Projects')"> Projects</div>
+      </div>
+      <div id="link-items">
+        <a href="https://github.com/jai1575/compsci-website" target="blank">
+          <img src="image/github_white.png">
+        </a>
+      </div>
+    </header>
+
+    <div id="container">
+      <div id="journal" class="column">
+        <div id="output" class="content markdown-body"></div>
+      </div>
+      <div id="projects" class="column">
+      </div>
+    </div>
+    
+    <footer>
+    </footer>
+  </body>
+</html>
