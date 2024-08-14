@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" href="image/jaimccoy.png">
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="./src/script.js"></script>
     <title>Jai McCoy -Computer Science</title>
   </head>
 
   <body>
     <header>
       <div id="menu-items">
-        <div id="journal-button" onclick="toggle('journal','journal-button','Journal')"> Journal</div>
+        <div id="csjournal-button" onclick="toggle('csjournal','csjournal-button','CS Journal')"> CS Journal</div>
+        <div id="engjournal-button" onclick="toggle('engjournal','engjournal-button', 'Eng Journal')">Eng Journal</div>
         <div id="projects-button" onclick="toggle('projects','projects-button','Projects')">Projects</div>
       </div>
       <div id="link-items">
@@ -23,7 +24,33 @@
     </header>
 
     <div id="container">
-      <div id="journal" class="column">
+      <div id="select" style="display: none;">
+        <div class="no-page">No page selected</div>
+      </div>
+      <div id="engjournal" class="column" style="display: none;">
+        <h1>
+          <br>
+          <strong>Engineering Journal</strong>
+        </h1>
+        <br>
+        <h3>
+          <strong> -Jai McCoy</strong>
+        </h3>
+        <hr>
+          <h1>Index:</h1>
+          <br>
+          <h3>August, 2024</h3>
+          <li>Wednesday, 14</li>
+          </ul>
+        <hr>
+        <div id="081324">
+          <h2>Wednesday, 14th, Aug Journal</h2>
+          <br>
+          <h4 class="question">Question:</h4>
+          <h4 class="answer">Answer:</h4>
+        </div>
+      </div>
+      <div id="csjournal" class="column">
         <h1>
           <br>
           <strong>CS Journal</strong>
@@ -69,13 +96,17 @@
         <div id="081424">
           <h2>Wednesday, 14th, Aug Journal</h2>
           <br>
+          <h4>Objective:</h4>
+          <ul>
+            <li>Understand what is possible in IB and how we can work together to support our learning</li>
+          </ul>
           <h4 class="question">Question:</h4>
           <ul>
-            <li>TBD</li>
+            <li>Do you have what you need to learn what you want and if not what do you need?</li>
           </ul>
           <h4 class="answer">Answer:</h4>
           <ul>
-            <li>TBD</li>
+            <p>I have everything needed for learning.</p>
           </ul>
         </div>
       </div>

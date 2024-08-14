@@ -25,6 +25,12 @@ body {
   height:100vh;
 }
 
+hr {
+  height: 2px;
+  border-width: 0;
+  background-color: slategrey;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   word-wrap: stable;
@@ -39,7 +45,6 @@ h2 {
 h4 {
   color: #363745;
 }
-
 p {
   margin: 1em;
 }
@@ -71,12 +76,22 @@ header a:hover {
   display: flex;
 }
 
-#journal-button {
+#csjournal-button {
   margin-left: 16px;
   cursor: pointer;
 }
 
-#journal {
+#engjournal-button {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+#engjournal {
+  background-color: #aaa;
+  padding: 0.5em 1em;
+}
+
+#csjournal {
   background-color: #bbb;
   padding: 0.5em 1em;
 }
