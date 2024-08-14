@@ -1,4 +1,3 @@
-# `bmiller@fusd1.org` Open with [Markdown Preview Website](https://markdownlivepreview.com) 
 # **Computer Science Journal -Skanda Jai McCabe**
 ---
 # Calender:
