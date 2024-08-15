@@ -11,13 +11,29 @@
 
   <body>
     <header>
+      <div id="icon-items">
+        <a href="home">
+          <img src="image/icon.png">
+        </a>
+      </div>
       <div id="menu-items">
-        <div id="csjournal-button" onclick="toggle('csjournal','csjournal-button','CS Journal')"> CS Journal</div>
-        <div id="devblog-button" onclick="toggle('devblog','devblog-button', 'Dev Blog')">Dev Blog</div>
-        <div id="projects-button" onclick="toggle('projects','projects-button','Projects')">Projects</div>
+        <div class="mobile-menu-items">
+          <a href="home.html"> <div class="mobile-button" id="home-button-mob"></div> </a>
+          <a> <div class="mobile-button" id="abtme-button-mob" onclick="toggle('abtme','abtme-button','About Me','')"> </div> </a>
+          <a> <div class="mobile-button" id="csjournal-button-mob" onclick="toggle('csjournal','csjournal-button','CS Journal','󰂾')">󰂾</div> </a>
+          <a> <div class="mobile-button" id="devblog-button-mob" onclick="toggle('devblog','devblog-button','Dev Blog', '󱃖')">󱃖</div> </a>
+          <a> <div class="mobile-button" id="projects-button-mob" onclick="toggle('projects','projects-button','Projects','')"></div> </a>
+        </div>
+        <div class="desktop-menu-items">
+          <a href="home.html"> <div class="desktop-button" id="home-button">Home</div> </a>
+          <a> <div class="desktop-button" id="abtme-button" onclick="toggle('abtme','abtme-button','About Me', '')"> About Me</div> </a>
+          <a> <div class="desktop-button" id="csjournal-button" onclick="toggle('csjournal','csjournal-button','CS Journal', '󰂾')">CS Journal</div> </a>
+          <a> <div class="desktop-button" id="devblog-button" onclick="toggle('devblog','devblog-button', 'Dev Blog', '󱃖')">Dev Blog</div> </a>
+          <a> <div class="desktop-button" id="projects-button" onclick="toggle('projects','projects-button','Projects', '')">Projects</div> </a>
+        </div>
       </div>
       <div id="link-items">
-        <a href="https://github.com/jai1575/compsci-website" target="blank">
+        <a href="https://github.com/jai1575/jai1575.github.io" target="blank">
           <img src="image/github_white.png">
         </a>
       </div>
@@ -27,9 +43,11 @@
       <div id="select" style="display: none;">
         <div class="no-page">No page selected</div>
       </div>
+      <div id="abtme" class="column">
+      </div>
       <div id="devblog" class="column" style="display: none;">
       </div>
-      <div id="csjournal" class="column">
+      <div id="csjournal" class="column" style="display: none;">
         <h1>
           <br>
           <strong>CS Journal</strong>
@@ -85,7 +103,7 @@
           </ul>
           <h4 class="answer">Answer:</h4>
           <ul>
-            <p>I have everything needed for learning. I need a laptop that can handle high memory operations. A laptop with linux distrobution, neovim, emacs, and basic dev tools.</p>
+            <p>I have everything needed for learning. I need a laptop that has a minimum of 8GB. A laptop with linux distrobution, neovim, emacs, and basic dev tools.</p>
           </ul>
         </div>
       </div>
