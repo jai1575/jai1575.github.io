@@ -9,7 +9,7 @@ function toggle(element, button, txt) {
         x.getElementById(button).innerHTML = " " + txt;
     }
     if (x.getElementById("csjournal").style.display === "none" &&
-        document.getElementById("engjournal").style.display === "none" &&
+        document.getElementById("devblog").style.display === "none" &&
         document.getElementById("projects").style.display === "none") {
         x.getElementById("select").style.display = "block";
     }
