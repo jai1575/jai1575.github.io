@@ -8,7 +8,7 @@
   src: url("fonts/UbuntuSansNerdFont-Bold.woff") format("woff");
 }
 
-@media only screen and (max-width: 680px) and (min-width: 560px) {
+@media only screen and (max-width: 580px) and (min-width: 460px) {
   .mobile-menu-items {
     display: flex;
   }
@@ -19,7 +19,7 @@
     flex-direction: column-reverse;
   }
   header {
-    font-size: 1.5em;
+    font-size: 1.25em;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -39,7 +39,7 @@
   }
 }
 
-@media only screen and (min-width: 680px) and (max-width: 720px) {
+@media only screen and (min-width: 580px) and (max-width: 720px) {
   .mobile-menu-items {
     display: flex;
   }
@@ -58,7 +58,7 @@
   }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 360px) {
   .mobile-menu-items {
     display: flex;
   }
@@ -86,7 +86,7 @@
   #projects-button-mob { display: none; }
 }
 
-@media only screen and (max-width: 560px) and (min-width: 430px) {
+@media only screen and (max-width: 460px) and (min-width: 360px) {
   .mobile-menu-items {
     display: flex;
   }
@@ -97,7 +97,7 @@
     flex-direction: column-reverse;
   }
   header {
-    font-size: 1.5em;
+    font-size: 1.25em;
     position: fixed;
     bottom: 0;
     right: 0;
