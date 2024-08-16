@@ -6,8 +6,8 @@ function toggle(element, button, txt, ico) {
     x.getElementById(button+"-mob").innerHTML=ico;
   } else if (x.getElementById(element).style.display === "none") {
     x.getElementById(element).style.display="";
-    x.getElementById(button).innerHTML=" "+txt;
-    x.getElementById(button+"-mob").innerHTML=" "+ico;
+    x.getElementById(button).innerHTML="Close";
+    x.getElementById(button+"-mob").innerHTML="";
   }
   if (x.getElementById("csjournal").style.display==="none" &&
       x.getElementById("devblog").style.display==="none" &&
