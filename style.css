@@ -8,30 +8,42 @@
   src: url("fonts/UbuntuSansNerdFont-Bold.woff") format("woff");
 }
 
-@media only screen and (max-width: 600px) and (min-width: 300px) {
+@media only screen and (max-width: 800px) and (min-width: 550px) {
   .mobile-menu-items {
     display: flex;
   }
   .desktop-menu-items {
     display: none;
+  }
+  header {
+    font-size: 1.5em;
   }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 800px){
   .mobile-menu-items {
     display: none;
   }
   .desktop-menu-items {
     display: flex;
+  }
+  header {
+    font-size: 1em;
   }
 }
 
-@media only screen and (max-width: 200px){
+@media only screen and (max-width: 500px){
   .mobile-menu-items {
     display: flex;
   }
   .desktop-menu-items {
     display: none;
+  }
+  header {
+    font-size: 1.5em;
+  }
+  #home-button-mob {
+    padding: 1em;
   }
   #csjournal-button-mob { display: none; }
   #devblog-button-mob { display: none; }
@@ -39,12 +51,15 @@
   #projects-button-mob { display: none; }
 }
 
-@media only screen and (max-width: 350px) and (min-width: 200px){
+@media only screen and (max-width: 650px) and (min-width: 500px){
   .mobile-menu-items {
     display: flex;
   }
   .desktop-menu-items {
     display: none;
+  }
+  header {
+    font-size: 1.75em;
   }
   #csjournal-button-mob { display: none; }
   #devblog-button-mob { display: none; }
@@ -105,14 +120,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.625em 1.25em;
-  width: 100%;
   background-color: #444;
-  font-size: 1.4;
   color: #fff;
 }
 
 header a:link, header a:hover {
-  color: #949494;
   text-decoration: none;
 }
 
@@ -136,7 +148,7 @@ header a:active, a:visited {
 }
 
 #home-button,#home-button-mob {
-  margin-left: 1.5em;
+  margin-left: none;
   cursor: pointer;
 }
 
@@ -167,22 +179,27 @@ header a:active, a:visited {
 #abtme {
   background-color: #999;
 }
+
 #home {
   background-color: #999;
 }
 
 #icon-items img {
-  display: block;
+  display: flex;
   width: 2em;
 }
 
 #link-items img {
-  display: block;
+  display: flex;
   width: 2em;
 }
 
 #link-items {
-    padding-right: 2.5em;
+  display: flex;
+}
+
+#youtube-link-items{
+  margin: 0em 0em 0em 1em;
 }
 
 #container {

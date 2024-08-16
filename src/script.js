@@ -15,8 +15,12 @@ function toggle(element, button, txt, ico) {
         x.getElementById("abtme").style.display === "none" &&
         x.getElementById("projects").style.display === "none") {
         x.getElementById("select").style.display = "block";
+        x.getElementById("home-button").innerHTML = " Home";
+        x.getElementById("home-button-mob").innerHTML = " ";
     }
     else {
         x.getElementById("select").style.display = "none";
+        x.getElementById("home-button").innerHTML = "Home";
+        x.getElementById("home-button-mob").innerHTML = "";
     }
 }
