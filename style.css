@@ -44,10 +44,12 @@
   }
   #home-button-mob {
     padding: 1em;
+    font-size: 2em;
   }
   #csjournal-button-mob { display: none; }
   #devblog-button-mob { display: none; }
   #abtme-button-mob { display: none; }
+  #youtube-link-items { display: none; }
   #projects-button-mob { display: none; }
 }
 
@@ -148,7 +150,6 @@ header a:active, a:visited {
 }
 
 #home-button,#home-button-mob {
-  margin-left: none;
   cursor: pointer;
 }
 
