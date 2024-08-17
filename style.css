@@ -8,39 +8,23 @@
   src: url("fonts/UbuntuSansNerdFont-Bold.woff") format("woff");
 }
 
-@media only screen and (max-width: 480px) and (min-width: 360px) {
-  .mobile-menu-items {
-    display: flex;
-  }
-  .desktop-menu-items {
-    display: none;
-  }
-  #container {
-    flex-direction: column-reverse;
-  }
-  header {
-    font-size: 1em;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
-}
 
 @media only screen and (min-width: 680px) {
-  .mobile-menu-items {
+  .tablet-menu-items {
     display: none;
   }
   .desktop-menu-items {
     display: flex;
   }
-  header {
+  #main-items {
     font-size: 1em;
   }
+  #menu-button-mob { display: none; }
+  #mobile-menu-items { display: none; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 680px) {
-  .mobile-menu-items {
+  .tablet-menu-items {
     display: flex;
   }
   .desktop-menu-items {
@@ -49,17 +33,43 @@
   #container {
     flex-direction: column-reverse;
   }
-  header {
+  #main-items {
     font-size: 1em;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
   }
+  #menu-button-mob { display: none; }
+  #mobile-menu-items { display: none; }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 360px) {
+  .tablet-menu-items {
+    display: flex;
+  }
+  .desktop-menu-items {
+    display: none;
+  } #container {
+    flex-direction: column-reverse;
+  }
+  #main-items {
+    font-size: 1em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  #csjournal-button-mob { display: none; }
+  #devblog-button-mob { display: none; }
+  #abtme-button-mob { display: none; }
+  #youtube-link-items { display: none; }
+  #projects-button-mob { display: none; }
+  #mobile-menu-items { display: none; }
 }
 
 @media only screen and (max-width: 360px) {
-  .mobile-menu-items {
+  .tablet-menu-items {
     display: flex;
   }
   .desktop-menu-items {
@@ -68,7 +78,7 @@
   #container {
     flex-direction: column-reverse;
   }
-  header {
+  #main-items {
     font-size: 1em;
     position: fixed;
     bottom: 0;
@@ -76,37 +86,20 @@
     left: 0;
   }
   #home-button-mob {
-    padding: 1em;
-    font-size: 2em;
+    padding: 0.125em;
+    font-size: 1.75em; 
+  }
+  #menu-button-mob {
+    padding: 0.125em;
+    font-size: 1.75em; 
   }
   #csjournal-button-mob { display: none; }
   #devblog-button-mob { display: none; }
   #abtme-button-mob { display: none; }
   #youtube-link-items { display: none; }
   #projects-button-mob { display: none; }
+  #mobile-menu-items { display: none; }
 }
-
-@media only screen and (max-width: 480px) and (min-width: 360px) {
-  .mobile-menu-items {
-    display: flex;
-  }
-  .desktop-menu-items {
-    display: none;
-  }
-  #container {
-    flex-direction: column-reverse;
-  }
-  header {
-    font-size: 1.25em;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
-  #csjournal-button-mob { display: none; }
-  #devblog-button-mob { display: none; }
-}
-
 html, body {
   color: #333;
   overflow-x: hidden;
@@ -126,7 +119,7 @@ td, th {
 body {
   display: flex;
   flex-direction: column;
-  height:100vh;
+  height: 100vh;
 }
 
 hr {
@@ -142,20 +135,18 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: normal;
 }
 
-h2 {
-  color: #6890B1;
+h2 { color: #343268; }
+
+h3 a {
+  text-decoration: none;
+  color: #3B3892;
 }
 
-h4 {
-  color: #363745;
-}
-p {
-  margin: 1em;
-}
+h4 { color: #363745; }
 
-img {
-  border: none;
-}
+p { margin: 1em; }
+
+img { border: none; }
 
 header {
   display: flex;
@@ -166,27 +157,36 @@ header {
   color: #fff;
 }
 
-header a:link, header a:hover {
-  text-decoration: none;
-}
-
-header a:active, a:visited {
-  color: #fff;
-  text-decoration: none;
-}
-
-#menu-items {
+#main-items {
   display: flex;
+  flex-direction: column;
 }
 
-#menu-items a {
-  cursor: pointer;
+#mobile-menu-items {
+  justify-content: center;
+  background-color: #555;
+  color: #eee;
 }
+
+#mobile-menu-items a { cursor: pointer; }
+
+#menu-items { display: flex; }
+
+#menu-items a { cursor: pointer; }
 
 #csjournal-button-mob,
 #devblog-button-mob,
 #projects-button-mob,
-#abtme-button-mob {
+#abtme-button-mob,
+#menu-button-mob {
+  margin-left: 1em;
+}
+
+#csjournal-button-men,
+#devblog-button-men,
+#projects-button-men,
+#abtme-button-men,
+#menu-button-men {
   margin-left: 1em;
 }
 
@@ -197,9 +197,7 @@ header a:active, a:visited {
   margin-left: 1.5em;
 }
 
-#home-button {
-  cursor: pointer;
-}
+#home-button { cursor: pointer; }
 
 #devblog {
   background-color: #aaa;
@@ -211,17 +209,11 @@ header a:active, a:visited {
   padding: 0.5em 1em;
 }
 
-#projects {
-  background-color: #ccc;
-}
+#projects { background-color: #ccc; }
 
-#abtme {
-  background-color: #999;
-}
+#abtme { background-color: #999; }
 
-#home {
-  background-color: #888;
-}
+#home { background-color: #888; }
 
 #icon-items img {
   display: flex;
@@ -233,13 +225,9 @@ header a:active, a:visited {
   width: 2em;
 }
 
-#link-items {
-  display: flex;
-}
+#link-items { display: flex; }
 
-#youtube-link-items{
-  margin: 0em 0em 0em 1em;
-}
+#youtube-link-items{ margin: 0em 0em 0em 1em; }
 
 #container {
   flex-grow: 1;
@@ -251,9 +239,7 @@ header a:active, a:visited {
   display: flex;
 }
 
-#preview-wrapper {
-  padding: 0.625em;;
-}
+#preview-wrapper { padding: 0.625em; }
 
 .column {
   overflow-y: scroll;
@@ -263,6 +249,4 @@ header a:active, a:visited {
   vertical-align: top;
 }
 
-#preview.column {
-  white-space: normal;
-}
+#preview.column { white-space: normal; }

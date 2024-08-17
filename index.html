@@ -6,42 +6,49 @@
     <link rel="icon" type="image/png" href="image/icon.png">
 
     <script type="text/javascript" src="./src/script.js"></script>
-    <title>Jai McCoy -Computer Science</title>
+    <title>Jai @home</title>
   </head>
 
   <body>
-    <header>
-      <div id="icon-items">
-        <a id="home-icon-items" onclick="toggle(1,'home-button')">
-          <img src="image/icon_white.png">
-        </a>
+    <div id="main-items">
+      <div id="mobile-menu-items">
+        <a> <div class="mobile-button" id="abtme-button-men" onclick="toggle(2)"></div> </a>
+        <a> <div class="mobile-button" id="csjournal-button-men" onclick="toggle(3)">󰂾</div> </a>
+        <a> <div class="mobile-button" id="devblog-button-men" onclick="toggle(4)">󱃖</div> </a>
+        <a> <div class="mobile-button" id="projects-button-men" onclick="toggle(5)"></div> </a>
       </div>
-      <div id="menu-items">
-        <div class="mobile-menu-items">
-          <a> <div class="desktop-button" id="home-button-mob" onclick="toggle(1,'home-button')"></div> </a>
-          <a> <div class="mobile-button" id="abtme-button-mob" onclick="toggle(2,'abtme-button')"></div> </a>
-          <a> <div class="mobile-button" id="csjournal-button-mob" onclick="toggle(3,'csjournal-button')">󰂾</div> </a>
-          <a> <div class="mobile-button" id="devblog-button-mob" onclick="toggle(4,'devblog-button')">󱃖</div> </a>
-          <a> <div class="mobile-button" id="projects-button-mob" onclick="toggle(5,'projects-button')"></div> </a>
+      <header>
+        <div id="icon-items">
+          <a id="home-icon-items" onclick="toggle(1,'home-button')">
+            <img src="image/icon_white.png">
+          </a>
         </div>
-        <div class="desktop-menu-items">
-          <a> <div class="desktop-button" id="home-button" onclick="toggle(1,'home-button')">Home</div> </a>
-          <a> <div class="desktop-button" id="abtme-button" onclick="toggle(2,'abtme-button')">Close</div> </a>
-          <a> <div class="desktop-button" id="csjournal-button" onclick="toggle(3,'csjournal-button')">CS Journal</div> </a>
-          <a> <div class="desktop-button" id="devblog-button" onclick="toggle(4,'devblog-button')">Dev Blog</div> </a>
-          <a> <div class="desktop-button" id="projects-button" onclick="toggle(5,'projects-button')">Projects</div> </a>
+        <div id="menu-items">
+          <div class="tablet-menu-items">
+            <a> <div class="mobile-button" id="home-button-mob" onclick="toggle(1)"></div> </a>
+            <a> <div class="mobile-button" id="abtme-button-mob" onclick="toggle(2)"></div> </a>
+            <a> <div class="mobile-button" id="csjournal-button-mob" onclick="toggle(3)">󰂾</div> </a>
+            <a> <div class="mobile-button" id="devblog-button-mob" onclick="toggle(4)">󱃖</div> </a>
+            <a> <div class="mobile-button" id="projects-button-mob" onclick="toggle(5)"></div> </a>
+            <a> <div class="mobile-button" id="menu-button-mob" onclick="toggleMenu()"></div> </a>
+          </div>
+          <div class="desktop-menu-items">
+            <a> <div class="desktop-button" id="home-button" onclick="toggle(1)">Home</div> </a>
+            <a> <div class="desktop-button" id="abtme-button" onclick="toggle(2)">*About Me</div> </a>
+            <a> <div class="desktop-button" id="csjournal-button" onclick="toggle(3)">CS Journal</div> </a>
+            <a> <div class="desktop-button" id="devblog-button" onclick="toggle(4)">Dev Blog</div> </a>
+            <a> <div class="desktop-button" id="projects-button" onclick="toggle(5)">Projects</div> </a>
+          </div>
         </div>
-      </div>
-      <div id="link-items">
-        <a id="github-link-items" href="https://github.com/jai1575/jai1575.github.io" target="blank">
-          <img src="image/github_white.png">
-        </a>
-        <a id="youtube-link-items" href="https://youtube.com/@jai2000" target="blank">
-          <img src="image/youtube_white.png">
-        </a>
-      </div>
-    </header>
-
+        <div id="link-items">
+          <a id="github-link-items" href="https://github.com/jai1575/jai1575.github.io" target="blank">
+            <img src="image/github_white.png"> </a>
+          <a id="youtube-link-items" href="https://youtube.com/@jai2000" target="blank">
+            <img src="image/youtube_white.png">
+          </a>
+        </div>
+      </header>
+    </div>
     <div id="container">
       <div id="select" style="display: none;">
         <div class="no-page">No page selected</div>
@@ -66,8 +73,9 @@
           <h1>Index:</h1>
           <br>
           <h3>August, 2024</h3>
-          <li>Tuesday, 13</li>
-          <li>Wednesday, 14</li>
+          <ul>
+            <li>Tuesday, 13</li>
+            <li>Wednesday, 14</li>
           </ul>
         <hr>
         <div id="081324">
@@ -79,25 +87,29 @@
           </ul>
           <h4 class="answer">Answer:</h4>
           <ul>
-            <li>Curiosity<ul>
+            <li>Curiosity</li>
+            <ul>
+              <li>Ambition</li>
+              <li>Problem solving</li>
+            </ul>
             <li>Ambition</li>
-            <li>Problem solving</li>
-          </ul>
-            </li>
-            <li>Ambition<ul>
-            <li>Pace</li>
-            <li>Practice</li>
-            <li>Foundational knowledge<ul>
-            <li>Knowledge needed to learn more</li>
-          </ul>
-          </li>
-          </ul>
-          </li>
+              <ul>
+                <li>Pace</li>
+                <li>Practice</li>
+                <li>Foundational knowledge</li>
+                <ul>
+                  <li>Knowledge needed to learn more</li>
+                </ul>
+              </ul>
           </ul>
         </div>
         <hr>
         <div id="081424">
           <h2>Wednesday, 14th, Aug Journal</h2>
+          <br>
+            <h3>
+              <a href="#top">Back To Top </a>
+            </h3>
           <br>
           <h4>Objective:</h4>
           <ul>
