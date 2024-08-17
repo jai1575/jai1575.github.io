@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="image/jaimccoy.png">
+    <link rel="icon" type="image/png" href="image/icon.png">
 
     <script type="text/javascript" src="./src/script.js"></script>
     <title>Jai McCoy -Computer Science</title>
@@ -12,24 +12,24 @@
   <body>
     <header>
       <div id="icon-items">
-        <a id="home-icon-items" href="index.html">
+        <a id="home-icon-items" onclick="toggle(1,'home-button')">
           <img src="image/icon_white.png">
         </a>
       </div>
       <div id="menu-items">
         <div class="mobile-menu-items">
-          <a href="index.html"> <div class="desktop-button" id="home-button-mob"></div> </a>
-          <a> <div class="mobile-button" id="abtme-button-mob" onclick="toggle('abtme','abtme-button','About Me','')"></div> </a>
-          <a> <div class="mobile-button" id="csjournal-button-mob" onclick="toggle('csjournal','csjournal-button','CS Journal','󰂾')">󰂾</div> </a>
-          <a> <div class="mobile-button" id="devblog-button-mob" onclick="toggle('devblog','devblog-button','Dev Blog', '󱃖')">󱃖</div> </a>
-          <a> <div class="mobile-button" id="projects-button-mob" onclick="toggle('projects','projects-button','Projects','')"></div> </a>
+          <a> <div class="desktop-button" id="home-button-mob" onclick="toggle(1,'home-button')"></div> </a>
+          <a> <div class="mobile-button" id="abtme-button-mob" onclick="toggle(2,'abtme-button')"></div> </a>
+          <a> <div class="mobile-button" id="csjournal-button-mob" onclick="toggle(3,'csjournal-button')">󰂾</div> </a>
+          <a> <div class="mobile-button" id="devblog-button-mob" onclick="toggle(4,'devblog-button')">󱃖</div> </a>
+          <a> <div class="mobile-button" id="projects-button-mob" onclick="toggle(5,'projects-button')"></div> </a>
         </div>
         <div class="desktop-menu-items">
-          <a href="index.html"> <div class="desktop-button" id="home-button">Home</div> </a>
-          <a> <div class="desktop-button" id="abtme-button" onclick="toggle('abtme','abtme-button','About Me', '')"> About Me</div> </a>
-          <a> <div class="desktop-button" id="csjournal-button" onclick="toggle('csjournal','csjournal-button','CS Journal', '󰂾')">CS Journal</div> </a>
-          <a> <div class="desktop-button" id="devblog-button" onclick="toggle('devblog','devblog-button', 'Dev Blog', '󱃖')">Dev Blog</div> </a>
-          <a> <div class="desktop-button" id="projects-button" onclick="toggle('projects','projects-button','Projects', '')">Projects</div> </a>
+          <a> <div class="desktop-button" id="home-button" onclick="toggle(1,'home-button')">Home</div> </a>
+          <a> <div class="desktop-button" id="abtme-button" onclick="toggle(2,'abtme-button')">Close</div> </a>
+          <a> <div class="desktop-button" id="csjournal-button" onclick="toggle(3,'csjournal-button')">CS Journal</div> </a>
+          <a> <div class="desktop-button" id="devblog-button" onclick="toggle(4,'devblog-button')">Dev Blog</div> </a>
+          <a> <div class="desktop-button" id="projects-button" onclick="toggle(5,'projects-button')">Projects</div> </a>
         </div>
       </div>
       <div id="link-items">
@@ -45,6 +45,9 @@
     <div id="container">
       <div id="select" style="display: none;">
         <div class="no-page">No page selected</div>
+      </div>
+      <div id="home" class="column" style="display: none;">
+        
       </div>
       <div id="abtme" class="column">
       </div>

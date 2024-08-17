@@ -47,7 +47,7 @@
     display: none;
   }
   #container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   header {
     font-size: 1em;
@@ -179,27 +179,25 @@ header a:active, a:visited {
   display: flex;
 }
 
-#csjournal-button,#csjournal-button-mob {
-  margin-left: 1.5em;
+#menu-items a {
   cursor: pointer;
 }
 
-#devblog-button,#devblog-button-mob {
-  margin-left: 1.5em;
-  cursor: pointer;
+#csjournal-button-mob,
+#devblog-button-mob,
+#projects-button-mob,
+#abtme-button-mob {
+  margin-left: 1em;
 }
 
-#home-button,#home-button-mob {
-  cursor: pointer;
+#csjournal-button,
+#devblog-button,
+#projects-button,
+#abtme-button {
+  margin-left: 1.5em;
 }
 
-#projects-button,#projects-button-mob {
-  margin-left: 1.5em;
-  cursor: pointer;
-}
-
-#abtme-button,#abtme-button-mob {
-  margin-left: 1.5em;
+#home-button {
   cursor: pointer;
 }
 
@@ -222,7 +220,7 @@ header a:active, a:visited {
 }
 
 #home {
-  background-color: #999;
+  background-color: #888;
 }
 
 #icon-items img {
