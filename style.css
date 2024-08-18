@@ -87,6 +87,7 @@
   #youtube-link-items { display: none; }
   #projects-button-mob { display: none; }
   #mobile-menu-items { display: none; }
+  #menu-button-mob { display: block; }
   #home-container { width: 100%; }
   #home-headline-container { flex-direction: column; }
   .img-photo-home { width: 8em; }
@@ -122,11 +123,12 @@
   #devblog-button-mob { display: none; }
   #youtube-link-items { display: none; }
   #projects-button-mob { display: none; }
+  #menu-button-mob { display: block; }
   #mobile-menu-items { display: none; }
   #home-container { width: 100%; }
   #home-headline-container { flex-direction: column; }
   .img-photo-home { width: 5em; }
-  html, body { font-size: 1em; }
+  html, body { font-size: 0.85em; }
 }
 
 ul {
@@ -197,6 +199,7 @@ nav {
 }
 
 #mobile-menu-items {
+  z-index: 100;
   justify-content: center;
   background-color: #555;
   color: #eee;
@@ -241,6 +244,13 @@ nav {
 #csjournal {
   background-color: #bbb;
   padding: 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#csjournal-container {
+  width: 80%;
 }
 
 #projects { background-color: #ccc; }
@@ -254,6 +264,7 @@ nav {
 #home-container {
   width: 100%;
   word-wrap: break-word;
+  overflow-x: hidden;
 }
 
 #home-headline {
