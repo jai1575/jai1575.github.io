@@ -192,6 +192,9 @@ nav {
 
 #menu-items a { cursor: pointer; }
 
+.mobile-button { cursor: pointer; }
+.desktop-button { cursor: pointer; }
+
 #csjournal-button-mob,
 #devblog-button-mob,
 #projects-button-mob,
