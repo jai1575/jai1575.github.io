@@ -133,6 +133,7 @@
 
 ul {
   margin-block-start: 0px;
+  padding-inline-start: 1.5em;
 }
 
 html, body {
@@ -251,6 +252,7 @@ nav {
 
 #csjournal-container {
   width: 80%;
+  margin: 0em 0em 5em 0em;
 }
 
 #projects { background-color: #ccc; }
