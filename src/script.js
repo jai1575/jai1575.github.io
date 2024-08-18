@@ -58,7 +58,7 @@ function menuResize() {
     if (window.innerWidth >= 0 && window.innerWidth > 480) {
         document.getElementById("mobile-menu-items").style.display = "none";
     }
-    else if (window.innerWidth >= 0 && window.innerWidth < 480) {
+    else if (window.innerWidth >= 0 && window.innerWidth <= 480) {
         if (document.getElementById("menu-button-mob").innerHTML === "") {
             document.getElementById("mobile-menu-items").style.display = "flex";
         }
