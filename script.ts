@@ -1,17 +1,14 @@
 const home: string = "home";
-const abtm: string = "abtme";
 const csjo: string = "csjournal";
 const devb: string = "devblog";
 const proj: string = "projects";
 
 const home_txt: string = "Home";
-const abtm_txt: string = "About Me";
 const csjo_txt: string = "CS Journal";
 const devb_txt: string = "Dev Blog";
 const proj_txt: string = "Projects";
 
 const home_ico: string = "";
-const abtm_ico: string = "";
 const csjo_ico: string = "󰂾";
 const devb_ico: string = "󱃖";
 const proj_ico: string = "";
@@ -35,9 +32,9 @@ function toggleMenu() {
 }
 
 function toggle(page) {
-  const elements: string[] = [ home,abtm,csjo,devb,proj ];
-  const elements_ico: string[] = [ home_ico,abtm_ico,csjo_ico,devb_ico,proj_ico ];
-  const elements_txt: string[] = [ home_txt,abtm_txt,csjo_txt,devb_txt,proj_txt ];
+  const elements: string[] = [ home,csjo,devb,proj ];
+  const elements_ico: string[] = [ home_ico,csjo_ico,devb_ico,proj_ico ];
+  const elements_txt: string[] = [ home_txt,csjo_txt,devb_txt,proj_txt ];
   var elm = document.getElementById(elements[page-1]);
   
   for (let i = 0; i < elements.length; i++) {

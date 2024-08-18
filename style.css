@@ -77,7 +77,6 @@
   }
   #csjournal-button-mob { display: none; }
   #devblog-button-mob { display: none; }
-  #abtme-button-mob { display: none; }
   #youtube-link-items { display: none; }
   #projects-button-mob { display: none; }
   #mobile-menu-items { display: none; }
@@ -110,7 +109,6 @@
   }
   #csjournal-button-mob { display: none; }
   #devblog-button-mob { display: none; }
-  #abtme-button-mob { display: none; }
   #youtube-link-items { display: none; }
   #projects-button-mob { display: none; }
   #mobile-menu-items { display: none; }
@@ -197,7 +195,6 @@ nav {
 #csjournal-button-mob,
 #devblog-button-mob,
 #projects-button-mob,
-#abtme-button-mob,
 #menu-button-mob {
   margin-left: 1em;
 }
@@ -205,15 +202,13 @@ nav {
 #csjournal-button-men,
 #devblog-button-men,
 #projects-button-men,
-#abtme-button-men,
 #menu-button-men {
   margin-left: 1em;
 }
 
 #csjournal-button,
 #devblog-button,
-#projects-button,
-#abtme-button {
+#projects-button {
   margin-left: 1.5em;
 }
 
@@ -230,8 +225,6 @@ nav {
 }
 
 #projects { background-color: #ccc; }
-
-#abtme { background-color: #999; }
 
 #home {
   background-color: #888; 
