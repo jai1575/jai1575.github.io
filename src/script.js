@@ -10,22 +10,6 @@ var home_ico = "";
 var csjo_ico = "󰂾";
 var devb_ico = "󱃖";
 var proj_ico = "";
-function toggleMenu() {
-    var menu = document.getElementById("mobile-menu-items");
-    var menubtn = document.getElementById("menu-button-mob");
-    var projects = document.getElementById(proj + "-button");
-    var projectsmob = document.getElementById(proj + "-button-mob");
-    switch (menubtn.innerHTML) {
-        case "":
-            menubtn.innerHTML = "";
-            menu.style.display = "flex";
-            break;
-        case "":
-            menubtn.innerHTML = "";
-            menu.style.display = "none";
-            break;
-    }
-}
 function toggle(page) {
     var elements = [home, csjo, devb, proj];
     var elements_ico = [home_ico, csjo_ico, devb_ico, proj_ico];
@@ -54,6 +38,37 @@ function toggle(page) {
         }
     }
 }
+function toggleMenu() {
+    var menu = document.getElementById("mobile-menu-items");
+    var menubtn = document.getElementById("menu-button-mob");
+    var projects = document.getElementById(proj + "-button");
+    var projectsmob = document.getElementById(proj + "-button-mob");
+    switch (menubtn.innerHTML) {
+        case "":
+            menubtn.innerHTML = "";
+            menu.style.display = "flex";
+            break;
+        case "":
+            menubtn.innerHTML = "";
+            menu.style.display = "none";
+            break;
+    }
+}
+function menuResize() {
+    if (window.innerWidth >= 0 && window.innerWidth > 480) {
+        document.getElementById("mobile-menu-items").style.display = "none";
+    }
+    else if (window.innerWidth >= 0 && window.innerWidth < 480) {
+        if (document.getElementById("menu-button-mob").innerHTML === "") {
+            document.getElementById("mobile-menu-items").style.display = "flex";
+        }
+        else {
+            document.getElementById("mobile-menu-items").style.display = "none";
+        }
+    }
+}
+window.onresize = menuResize;
+menuResize();
 /*TODO: add url handler for SPA!!!!
     const urlHandler = async () => {
     var location = window.location.pathname;

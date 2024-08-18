@@ -8,7 +8,7 @@
   src: url("fonts/UbuntuSansNerdFont-Bold.woff") format("woff");
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 2160px) {
   .tablet-menu-items {
     display: none;
   }
@@ -21,6 +21,23 @@
   #menu-button-mob { display: none; }
   #mobile-menu-items { display: none; }
   #home-container { width: 30%; }
+  .img-photo-home { width: 10rem; }
+  html, body { font-size: 1em; }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 2160px){
+  .tablet-menu-items {
+    display: none;
+  }
+  .desktop-menu-items {
+    display: flex;
+  }
+  #main-items {
+    font-size: 1em;
+  }
+  #menu-button-mob { display: none; }
+  #mobile-menu-items { display: none; }
+  #home-container { width: 50%; }
   .img-photo-home { width: 10rem; }
   html, body { font-size: 1em; }
 }

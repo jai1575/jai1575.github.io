@@ -13,24 +13,6 @@ const csjo_ico: string = "󰂾";
 const devb_ico: string = "󱃖";
 const proj_ico: string = "";
 
-function toggleMenu() {
-  var menu = document.getElementById("mobile-menu-items");
-  var menubtn = document.getElementById("menu-button-mob");
-  var projects = document.getElementById(proj+"-button");
-  var projectsmob = document.getElementById(proj+"-button-mob");
-
-  switch (menubtn.innerHTML) {
-    case "":
-      menubtn.innerHTML = "";
-      menu.style.display = "flex";
-      break;
-    case "":
-      menubtn.innerHTML = "";
-      menu.style.display = "none";
-      break;
-  }
-}
-
 function toggle(page) {
   const elements: string[] = [ home,csjo,devb,proj ];
   const elements_ico: string[] = [ home_ico,csjo_ico,devb_ico,proj_ico ];
@@ -59,6 +41,39 @@ function toggle(page) {
     }
   }
 }
+
+function toggleMenu() {
+  var menu = document.getElementById("mobile-menu-items");
+  var menubtn = document.getElementById("menu-button-mob");
+  var projects = document.getElementById(proj+"-button");
+  var projectsmob = document.getElementById(proj+"-button-mob");
+
+  switch (menubtn.innerHTML) {
+    case "":
+      menubtn.innerHTML = "";
+      menu.style.display = "flex";
+      break;
+    case "":
+      menubtn.innerHTML = "";
+      menu.style.display = "none";
+      break;
+  }
+}
+
+function menuResize() {
+  if (window.innerWidth >= 0 && window.innerWidth > 480) {
+    document.getElementById("mobile-menu-items").style.display = "none";
+  } else if (window.innerWidth >= 0 && window.innerWidth < 480){
+    if (document.getElementById("menu-button-mob").innerHTML==="") {
+      document.getElementById("mobile-menu-items").style.display = "flex";
+    } else {
+      document.getElementById("mobile-menu-items").style.display = "none";
+    }
+  }
+}
+
+window.onresize = menuResize;
+menuResize();
 
 /*TODO: add url handler for SPA!!!!
     const urlHandler = async () => {
