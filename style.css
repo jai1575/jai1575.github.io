@@ -8,8 +8,7 @@
   src: url("fonts/UbuntuSansNerdFont-Bold.woff") format("woff");
 }
 
-
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 1080px) {
   .tablet-menu-items {
     display: none;
   }
@@ -21,6 +20,22 @@
   }
   #menu-button-mob { display: none; }
   #mobile-menu-items { display: none; }
+  #home-container { width: 45%; }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 1080px) {
+  .tablet-menu-items {
+    display: none;
+  }
+  .desktop-menu-items {
+    display: flex;
+  }
+  #main-items {
+    font-size: 1em;
+  }
+  #menu-button-mob { display: none; }
+  #mobile-menu-items { display: none; }
+  #home-container { width: 85%; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 680px) {
@@ -153,7 +168,7 @@ p { margin: 1em; }
 
 img { border: none; }
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -218,22 +233,47 @@ header {
 
 #abtme { background-color: #999; }
 
-#home { background-color: #888; }
+#home {
+  background-color: #888; 
+  display: flex;
+  justify-content: center;
+}
 
 #home-headline {
   height: 20em;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em;
   align-items: center;
   background-color: #aaa;
+  color: #333;
+}
+
+#home-headline-container {
+  display: flex;
+  align-items: center;
+}
+
+.img-photo-home {
+  width: 100%;
+}
+
+.name-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1-name-home {
+  padding: 1em;
+  font-weight: bold;
 }
 
 #home-midline {
-  height: 25em;
   margin-top: 1em;
+  padding: 2em 0em;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   background-color: #bbb;
   overflow: hidden;
 }
@@ -241,11 +281,6 @@ header {
 #home-midline-container {
   display: flex;
   flex-direction: row;
-}
-
-#home-headline-container {
-  display: flex;
-  flex-direction: column;
 }
 
 .skills-h2 { padding: 0em 1em; }
