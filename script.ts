@@ -5,7 +5,7 @@ const proj: string = "projects";
 
 const home_txt: string = "Home";
 const csjo_txt: string = "CS Journal";
-const devb_txt: string = "Dev Blog";
+const devb_txt: string = "Blog";
 const proj_txt: string = "Projects";
 
 const home_ico: string = "";
