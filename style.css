@@ -22,6 +22,7 @@
   #mobile-menu-items { display: none; }
   #home-container { width: 30%; }
   .img-photo-home { width: 10rem; }
+  #csjournal-container { width: 40%; }
   html, body { font-size: 1em; }
 }
 
@@ -39,6 +40,7 @@
   #mobile-menu-items { display: none; }
   #home-container { width: 50%; }
   .img-photo-home { width: 10rem; }
+  #csjournal-container { width: 60%; }
   html, body { font-size: 1em; }
 }
 
@@ -56,6 +58,7 @@
   #mobile-menu-items { display: none; }
   #home-container { width: 85%; }
   .img-photo-home { width: 10rem; }
+  #csjournal-container { width: 70%; }
   html, body { font-size: 1em; }
 }
 
@@ -80,6 +83,7 @@
   #mobile-menu-items { display: none; }
   #home-container { width: 100%; }
   .img-photo-home { width: 10rem; }
+  #csjournal-container { width: 90%; }
   html, body { font-size: 1em; }
 }
 
@@ -106,6 +110,7 @@
   #mobile-menu-items { display: none; }
   #menu-button-mob { display: block; }
   #home-container { width: 100%; }
+  #csjournal-container { width: 90%; }
   #home-headline-container { flex-direction: column; }
   .img-photo-home { width: 8em; }
   html, body { font-size: 1em; }
@@ -145,6 +150,7 @@
   #home-container { width: 100%; }
   #home-headline-container { flex-direction: column; }
   .img-photo-home { width: 5em; }
+  #csjournal-container { width: 100%; }
   html, body { font-size: 1em; }
 }
 
@@ -267,10 +273,7 @@ nav {
   align-items: center;
 }
 
-#csjournal-container {
-  width: 80%;
-  margin: 0em 0em 5em 0em;
-}
+#csjournal-container { margin: 0em 0em 5em 0em; }
 
 #projects { background-color: #ccc; }
 
