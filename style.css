@@ -38,7 +38,7 @@
   }
   #menu-button-mob { display: none; }
   #mobile-menu-items { display: none; }
-  #home-container { width: 50%; }
+  #home-container { width: 55%; }
   .img-photo-home { width: 10rem; }
   #csjournal-container { width: 60%; }
   html, body { font-size: 1em; }
@@ -361,7 +361,7 @@ nav {
 }
 
 #home-headline {
-  height: 20em;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -383,7 +383,7 @@ nav {
 }
 
 .h1-name-home {
-  padding: 1em;
+  padding: 0.25em 1em 0.25em 1em;
   font-weight: bold;
 }
 
