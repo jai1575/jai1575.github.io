@@ -387,6 +387,18 @@ nav {
   font-weight: bold;
 }
 
+.a-div-contact-home {
+  text-decoration: none;
+  margin-left: 0em;
+  cursor: pointer;
+  color: #3B3892;
+}
+
+.h3-div-contact-home {
+  margin-left: 1em;
+  font-weight: bold;
+}
+
 #home-midline {
   margin-top: 1em;
   padding: 2em 0em;
