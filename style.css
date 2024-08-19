@@ -387,6 +387,19 @@ nav {
   font-weight: bold;
 }
 
+.div-contact-home {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-div-contact-home-extra {
+  margin-left: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  color: #3B3892;
+  font-weight: bold;
+}
+
 .a-div-contact-home {
   text-decoration: none;
   margin-left: 0em;
