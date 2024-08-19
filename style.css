@@ -238,6 +238,8 @@ nav {
 .mobile-button { cursor: pointer; }
 .desktop-button { cursor: pointer; }
 
+#home-button { cursor: pointer; }
+
 #csjournal-button-mob,
 #devblog-button-mob,
 #projects-button-mob,
@@ -258,8 +260,6 @@ nav {
   margin-left: 1.5em;
 }
 
-#home-button { cursor: pointer; }
-
 #devblog {
   background-color: #aaa;
   padding: 0.5em 1em;
@@ -268,12 +268,84 @@ nav {
 #csjournal {
   background-color: #bbb;
   padding: 0.5em 1em;
+  transition: 1s;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #csjournal-container { margin: 0em 0em 5em 0em; }
+
+#h1-csjournal-top {
+  transition: 1s;
+  transition-delay: 200ms;
+  border-radius: 0.35em;
+  padding: 0.25em;
+}
+
+.index {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 1em;
+  margin-block-start: 0.25em;
+}
+
+.index-nav {
+  background-color: #cdcdcd;
+  padding: 0.25em;
+  transition-delay: 250ms;
+  border: 0.125em solid #ddd;
+  border-radius: 0.25em;
+  transition: 500ms;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0.25em;
+  color: #3B3892;
+}
+
+.index-nav:hover {
+  background-color: #dcdcdc;
+}
+
+.index-index {
+  color: #3B3892;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0.1em;
+  margin: 0.25em;
+  width: fit-content;
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em 0.5em transparent;
+}
+
+.index-index:hover {
+  box-shadow: 0 0 0.25em 0.5em #dcdcdc;
+  background-color: #dcdcdc;
+}
+
+.h3-index-month, .h3-index-week {
+  background-color: #cdcdcd;
+  border: 0.125em solid #ddd;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+  color: darkslategray;
+  padding: 0.1em;
+  margin: 0.25em;
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em 0.5em transparent;
+}
+
+.h3-index-month:hover, .h3-index-week:hover {
+  background-color: #dcdcdc;
+}
+
+.entry {
+  padding: 1em;
+  transition: 1s;
+  transition-delay: 250ms;
+  border-radius: 0.25em; 
+}
 
 #projects { background-color: #ccc; }
 

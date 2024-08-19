@@ -38,6 +38,18 @@ function toggle(page) {
         }
     }
 }
+function toggleElement(element, parent_element, on_txt, off_txt) {
+    var elm = document.getElementById(element);
+    var parElm = document.getElementById(parent_element);
+    if (elm.style.display === "none") {
+        elm.style.display = "";
+        parElm.innerHTML = on_txt;
+    }
+    else {
+        elm.style.display = "none";
+        parElm.innerHTML = off_txt;
+    }
+}
 function toggleMenu() {
     var menu = document.getElementById("mobile-menu-items");
     var menubtn = document.getElementById("menu-button-mob");
@@ -69,6 +81,28 @@ function menuResize() {
 }
 window.onresize = menuResize;
 menuResize();
+function bcgColor(div, color) {
+    document.getElementById(div).style.backgroundColor = "#ddd";
+    document.getElementById(div).style.boxShadow = "0 0 5px 10px #ddd";
+    setTimeout(function () {
+        if (color) {
+            document.getElementById(div).style.backgroundColor = color;
+        }
+        else {
+            document.getElementById(div).style.backgroundColor = null;
+        }
+        document.getElementById(div).style.boxShadow = null;
+    }, 500);
+}
+function scrollToDiv(div, color) {
+    if (color) {
+        bcgColor(div, color);
+    }
+    else {
+        bcgColor(div);
+    }
+    document.getElementById(div).scrollIntoView({ behavior: 'smooth' });
+}
 /*TODO: add url handler for SPA!!!!
     const urlHandler = async () => {
     var location = window.location.pathname;
