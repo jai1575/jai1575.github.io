@@ -43,11 +43,15 @@ function toggleElement(element, parent_element, on_txt, off_txt) {
     var parElm = document.getElementById(parent_element);
     if (elm.style.display === "none") {
         elm.style.display = "";
-        parElm.innerHTML = on_txt;
+        if (on_txt) {
+            parElm.innerHTML = on_txt;
+        }
     }
     else {
         elm.style.display = "none";
-        parElm.innerHTML = off_txt;
+        if (off_txt) {
+            parElm.innerHTML = off_txt;
+        }
     }
 }
 function toggleMenu() {

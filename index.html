@@ -301,11 +301,26 @@
         </main>
       </div>
       <div id="devblog" class="column" style="display: none;">
+<!--        <main id="devblog-container">
+          <header>
+            <h1>Blog Index:</h1>
+            <br>
+            <div id="index-tui-blog">
+              <h3 class="index-title" id="index-tui-blog" onclick="toggleElement('tui-blog', 'index-tui-blogs', ' First TUI', ' First TUI')"> First TUI</h3>
+              <h4 class="index-overview" id="index-tui-blogs" onclick="toggleElement('tui-blog', 'index-tui-blogs', ' First TUI', ' First TUI')"> First TUI</h4>
+            </div>
+            <br>
+          </header>
+          <article id="tui-blog">
+            <h1></h1>
+          </article>
+        </main>
+-->
       </div>
       <div id="csjournal" class="column" style="display: none;">
-        <div id="csjournal-container">
-          <div id="h1-csjournal-top">
-            <h1>
+        <main id="csjournal-container">
+          <header id="csjournal-top">
+            <h1 id="h1-csjournal-top">
               <br>
               <strong>CS Journal</strong>
             </h1>
@@ -313,135 +328,150 @@
             <h3>
               <strong> -Jai McCoy</strong>
             </h3>
-          </div>
-          <hr>
-            <h1>Index:</h1>
-            <br>
-            <h3 class="h3-index-month" id="index-month" onclick="toggleElement('0824', 'index-month', ' August, 2024', ' August, 2024')"> August, 2024</h3>
-            <ul class="index" id="0824">
-              <h3 class="h3-index-week" id="index-week-one" onclick="toggleElement('0824W1', 'index-week-one', ' August, Week One', ' August, Week One')"> August, Week One</h3>
-              <ul class="index" id="0824W1" style="display: none;">
-                <a class="index-index" onclick="scrollToDiv('081324')">Tuesday, 13</a>
-                <a class="index-index" onclick="scrollToDiv('081424')">Wednesday, 14</a>
-                <a class="index-index" onclick="scrollToDiv('081524')">Thursday, 15</a>
-                <a class="index-index" onclick="scrollToDiv('081624')">Friday, 16</a>
-              </ul>
-              <h3 class="h3-index-week" id="index-week-two" onclick="toggleElement('0824W2', 'index-week-two', ' August, Week Two', ' August, Week Two')"> August, Week Two</h3>
-              <ul class="index" id="0824W2" style="display: none;">
-                <a class="index-index" onclick="scrollToDiv('081924')">Monday, 19</a>
-              </ul>
-            </ul>
-            <br>
-          <hr>
-          <div id="081324" class="entry">
-            <h2>Tuesday, 13th, Aug Entry</h2>
-            <br>
-              <h3>
-                <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="index-nav">Back To Top </a> </h3>
-            <br>
-            <h4 class="question">Question:</h4>
-            <ul>
-              <li>What motvates you to LEARN?</li>
-            </ul>
-            <h4 class="answer">Answer:</h4>
-            <ul>
-              <li>Curiosity</li>
-              <ul>
-                <li>Ambition</li>
-                <li>Problem solving</li>
-              </ul>
-              <li>Ambition</li>
-                <ul>
-                  <li>Pace</li>
-                  <li>Practice</li>
-                  <li>Foundational knowledge</li>
-                  <ul>
-                    <li>Knowledge needed to learn more</li>
+          </header>
+          <article id="csjournal-index">
+              <hr>
+              <h1>Index:</h1>
+              <br>
+              <h3 class="h3-index-month" id="index-month" onclick="toggleElement('0824', 'index-month', ' August, 2024', ' August, 2024')"> August, 2024</h3>
+              <ul class="index" id="0824">
+                  <h3 class="h3-index-week" id="index-week-one" onclick="toggleElement('0824W1', 'index-week-one', ' August, Week One', ' August, Week One')"> August, Week One</h3>
+                  <ul class="index" id="0824W1" style="display: none;">
+                      <a class="index-index" onclick="scrollToDiv('081324')">Tuesday, 13</a>
+                      <a class="index-index" onclick="scrollToDiv('081424')">Wednesday, 14</a>
+                      <a class="index-index" onclick="scrollToDiv('081524')">Thursday, 15</a>
+                      <a class="index-index" onclick="scrollToDiv('081624')">Friday, 16</a>
                   </ul>
-                </ul>
-            </ul>
-          </div>
-          <hr>
-          <div id="081424" class="entry">
-            <h2>Wednesday, 14th, Aug Entry</h2>
-            <br>
+                  <h3 class="h3-index-week" id="index-week-two" onclick="toggleElement('0824W2', 'index-week-two', ' August, Week Two', ' August, Week Two')"> August, Week Two</h3>
+                  <ul class="index" id="0824W2" style="display: none;">
+                      <a class="index-index" onclick="scrollToDiv('081924')">Monday, 19</a>
+                  </ul>
+              </ul>
+              <br>
+              <hr>
+          </article>
+          <section id="081324" class="entry">
+              <h2>Tuesday, 13th, Aug Entry</h2>
+              <br>
               <h3>
-                <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="index-nav">Back To Top </a>
-              </h3>
-            <br>
-            <h4>Objective:</h4>
-            <ul>
-              <li>Understand what is possible in IB and how we can work together to support our learning</li>
-            </ul>
-            <h4 class="question">Question:</h4>
-            <ul>
-              <li>Do you have what you need to learn what you want and if not what do you need?</li>
-            </ul>
-            <h4 class="answer">Answer:</h4>
-            <ul>
-              <p>I have everything needed for learning. I need a laptop that has a minimum of 8GB. A laptop with linux distrobution, neovim, emacs, and basic dev tools.</p>
-            </ul>
-          </div>
+                  <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="index-nav">Back To Top </a> </h3>
+              <br>
+              <h4 class="question">Question:</h4>
+              <ul>
+                  <li>What motvates you to LEARN?</li>
+              </ul>
+              <h4 class="answer">Answer:</h4>
+              <ul>
+                  <li>Curiosity</li>
+                  <ul>
+                      <li>Ambition</li>
+                      <li>Problem solving</li>
+                  </ul>
+                  <li>Ambition</li>
+                  <ul>
+                      <li>Pace</li>
+                      <li>Practice</li>
+                      <li>Foundational knowledge</li>
+                      <ul>
+                          <li>Knowledge needed to learn more</li>
+                      </ul>
+                  </ul>
+              </ul>
+          </section>
           <hr>
-          <div id="081524" class="entry">
-            <h2>Thursday, 15th, Aug Entry</h2>
-            <br>
+          <section id="081424" class="entry">
+              <h2>Wednesday, 14th, Aug Entry</h2>
+              <br>
               <h3>
-                <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="index-nav">Back To Top </a>
+                  <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="index-nav">Back To Top </a>
               </h3>
-            <br>
-            <h4 class="learned">Learned:</h4>
-            <ul>
-                <p>Pseudocode is more in reference to a hypothetical logical statement rather than just fake code, because fake code could be interpreted in some language</p>
-            </ul>
-            <h4 class="question">Question:</h4>
-            <ul>
-              <li>What is metacognition</li>
-            </ul>
-            <h4 class="answer">Answer:</h4>
-            <ul>
-                <p>Metacognition must be something in reference to self, so cognition about cognition. A conclusion drawn because the prefix meta usually means the base word is self-referential</p>
-            </ul>
-          </div>
+              <br>
+              <h4 class="objective">Objective:</h4>
+              <ul>
+                  <li>Understand what is possible in IB and how we can work together to support our learning</li>
+              </ul>
+              <h4 class="question">Question:</h4>
+              <ul>
+                  <li>Do you have what you need to learn what you want and if not what do you need?</li>
+              </ul>
+              <h4 class="answer">Answer:</h4>
+              <ul>
+                  <p>I have everything needed for learning. I need a laptop that has a minimum of 8GB. A laptop with linux distrobution, neovim, emacs, and basic dev tools.</p>
+              </ul>
+          </section>
           <hr>
-          <div id="081624" class="entry">
-            <h2>Friday, 16th, Aug Entry</h2>
-            <br>
+          <section id="081524" class="entry">
+              <h2>Thursday, 15th, Aug Entry</h2>
+              <br>
               <h3>
-                <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="index-nav">Back To Top </a>
+                  <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="index-nav">Back To Top </a>
               </h3>
-            <br>
-            <h4>Objective:</h4>
-            <ul>
-              <li>What IB is and how IB will help you to accomplish your goals</li>
-            </ul>
-            <h4 class="learned">Learned:</h4>
-            <ul>
-              <li>What IBs philosophy is.</li>
-              <p>IB teaches its students to think critically and solve problems. IB helps students to be self-motivated. Often many IB students perform better, because of its strong academic, social, and emotional values.</p>
-            </ul>
-          </div>
+              <br>
+              <h4 class="learned">Learned:</h4>
+              <ul>
+                  <p>Pseudocode is more in reference to a hypothetical logical statement rather than just fake code, because fake code could be interpreted in some language</p>
+              </ul>
+              <h4 class="question">Question:</h4>
+              <ul>
+                  <li>What is metacognition</li>
+              </ul>
+              <h4 class="answer">Answer:</h4>
+              <ul>
+                  <p>Metacognition must be something in reference to self, so cognition about cognition. A conclusion drawn because the prefix meta usually means the base word is self-referential</p>
+              </ul>
+          </section>
           <hr>
-          <div id="081924" class="entry">
-            <h2>Monday, 19th, Aug Entry</h2>
-            <br>
+          <section id="081624" class="entry">
+              <h2>Friday, 16th, Aug Entry</h2>
+              <br>
               <h3>
-                <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="index-nav">Back To Top </a>
+                  <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="index-nav">Back To Top </a>
               </h3>
-            <br>
-            <h4 class="question">Questions:</h4>
-            <ul>
-              <li>Highs and/or lows from weekend?</li>
-              <li>Once Computer Scientist you know?</li>
-            </ul>
-            <h4 class="answer">Answer:</h4>
-            <ul>
-              <p>I had fun working on the command line frame buffering app. I was annoyed by societal norms.</p>
-              <li>Fred Brooks</li>
-              <li>Ada Lovelace</li>
-            </ul>
-          </div>
-        </div>
+              <br>
+              <h4 class="objective">Objective:</h4>
+              <ul>
+                  <li>What IB is and how IB will help you to accomplish your goals</li>
+              </ul>
+              <h4 class="learned">Learned:</h4>
+              <ul>
+                  <li>What IBs philosophy is.</li>
+                  <p>IB teaches its students to think critically and solve problems. IB helps students to be self-motivated. Often many IB students perform better, because of its strong academic, social, and emotional values.</p>
+              </ul>
+          </section>
+          <hr>
+          <section id="081924" class="entry">
+              <h2>Monday, 19th, Aug Entry</h2>
+              <br>
+              <h3>
+                  <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="index-nav">Back To Top </a>
+              </h3>
+              <br>
+              <h4 class="objective">Objective:</h4>
+              <ul>
+                  <li>Analyze the early history of computing hardware and its people in order to build our base knowledge and show respect.</li>
+              </ul>
+              <h4 class="learned">Learned:</h4>
+              <ul>
+                  <p>Abstraction is a topic in computer science that refers to abstraction of logic to fit common use case.</p>
+                  <p>Blaise Pascal is a famous scientist and mathematician, programming languages, units, and many more are named in his honor. He contributed some essential logical foundation for computer science.</p>
+                  <p>Alan Turing is a famous computer scientist, mathematician, philosopher, and theoretical biologist. Made famous from his code cracking in the war, and the pioneering he has done in computer science. Alan Turing is the inventor of the turing machine. Turing machine is a mathematical logic model that is part of the computability theory. A truly amazing man.</p>
+              </ul>
+              <h4 class="question">Questions:</h4>
+              <ul>
+                  <li>1. Highs and/or lows from weekend?</li>
+                  <li>2. One Computer Scientist you know?</li>
+              </ul>
+              <h4 class="answer">Answer:</h4>
+              <ul>
+                  <p>1. I had fun working on the command line frame buffering app. I was annoyed by societal norms.</p>
+                  <p>2: </p>
+                  <ul>
+                      <li>Fred Brooks</li>
+                      <li>Ada Lovelace</li>
+                  </ul>
+              </ul>
+          </section>
+        </main>
       </div>
       <div id="projects" class="column" style="display: none;">
         
