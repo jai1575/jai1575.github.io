@@ -366,6 +366,9 @@ nav {
 .answer, .learned{
   color: #663434;
 }
+.no-indent {
+  margin: 1em 0em;
+}
 
 #projects { background-color: #ccc; }
 
