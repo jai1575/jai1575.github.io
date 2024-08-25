@@ -271,7 +271,41 @@ nav {
 
 #devblog-container { margin: 0em 0em 5em 0em; }
 
+.index-article-blog {
+  background-color: #cdcdcd;
+  border: 0.125em solid #ddd;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+  color: darkslategray;
+  padding: 0.75em;
+  margin: 0.25em;
+  border-radius: 0.25em;
+}
 
+.index-article-blog:hover {
+  background-color: #ddd;
+}
+
+.unselectable {
+  --webkit-user-select: none;
+  user-select: none;
+}
+
+.language {
+  border: 0.125em solid #ddd;
+  border-radius: 0.25em;
+  padding: 0em 0.25em;
+  transition: 500ms ease-in-out;
+}
+
+.language a {
+  text-decoration: none;
+  color: #3B3892;
+}
+
+.language:hover {
+  border: 0.125em solid #cdcdcd;
+}
 
 #csjournal {
   background-color: #bbb;
@@ -328,8 +362,8 @@ nav {
 }
 
 .index-index:hover {
-  box-shadow: 0 0 0.25em 0.5em #dcdcdc;
-  background-color: #dcdcdc;
+  box-shadow: 0 0 0.25em 0.5em #ddd;
+  background-color: #ddd;
 }
 
 .h3-index-month, .h3-index-week {
@@ -341,11 +375,10 @@ nav {
   padding: 0.1em;
   margin: 0.25em;
   border-radius: 0.25em;
-  box-shadow: 0 0 0.25em 0.5em transparent;
 }
 
 .h3-index-month:hover, .h3-index-week:hover {
-  background-color: #dcdcdc;
+  background-color: #ddd;
 }
 
 .entry {
@@ -362,6 +395,11 @@ nav {
 }
 .question, .objective {
   color: #496634;
+}
+.sub-question, .sub-objective {
+  color: #0C954A;
+  font-size: 1.15em;
+  margin-left: 0.5em;
 }
 .answer, .learned{
   color: #663434;
