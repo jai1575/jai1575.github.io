@@ -2,6 +2,7 @@
   font-family: Ubuntu;
   src: url("fonts/UbuntuSansNerdFont-Regular.woff") format("woff");
 }
+
 @font-face {
   font-family: Ubuntu;
   font-weight: bold;
@@ -390,10 +391,10 @@ nav {
 
 .entry p { margin: 1em 0em; }
 
-.learned, .answer, .objective, .question {
+.learned, .answer, .objective, .question, .done {
   font-size: 1.3em;
 }
-.question, .objective {
+.question, .objective, .done {
   color: #496634;
 }
 .sub-question, .sub-objective {
@@ -401,7 +402,7 @@ nav {
   font-size: 1.15em;
   margin-left: 0.5em;
 }
-.answer, .learned{
+.answer, .learned {
   color: #663434;
 }
 .no-indent {

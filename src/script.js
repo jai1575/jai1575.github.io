@@ -2,6 +2,10 @@ var home = "home";
 var csjo = "csjournal";
 var devb = "devblog";
 var proj = "projects";
+var blogone = "keyboard-blog";
+var blogtwo = "tui-blog";
+var blogone_toggle = "index-keyboard-toggle";
+var blogtwo_toggle = "index-tui-toggle";
 var home_txt = "Home";
 var csjo_txt = "CS Journal";
 var devb_txt = "Blog";
@@ -35,6 +39,33 @@ function toggle(page) {
             if (document.getElementById(elements[page - 1] + "-button-men")) {
                 document.getElementById(elements[page - 1] + "-button-men").innerHTML = "";
             }
+        }
+    }
+}
+function toggleElementElement(element, parent_element, on_txt, off_txt) {
+    var elm = document.getElementById(element);
+    var parElm = document.getElementById(parent_element);
+    var elms = [blogone, blogtwo];
+    var elms_tog = [blogone_toggle, blogtwo_toggle];
+    for (var i = 0; i < elms.length; i++) {
+        if (elm[i] !== element) {
+            document.getElementById(elms[i]).style.display = "none";
+            document.getElementById("index-" + elms[i]).style.display = "";
+        }
+        if (elms_tog[i] !== parent_element) {
+            document.getElementById(elms_tog[i]).innerHTML.replace("", "");
+        }
+    }
+    if (elm.style.display === "none") {
+        elm.style.display = "";
+        if (on_txt) {
+            parElm.innerHTML = on_txt;
+        }
+    }
+    else {
+        elm.style.display = "none";
+        if (off_txt) {
+            parElm.innerHTML = off_txt;
         }
     }
 }
