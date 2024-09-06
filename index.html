@@ -311,7 +311,7 @@
                         <br>
                       <br>
                     </header>
-                    <article class="index-article-blog" id="index-keyboard-blog" onclick="toggleElementElement('keyboard-blog', 'index-keyboard-toggle', ' Custom Keyboard', ' Custom Keyboard')">
+                    <article class="index-article-blog" id="index-keyboard-blog" onclick="toggleElement('keyboard-blog', 'index-keyboard-toggle', ' Custom Keyboard', ' Custom Keyboard')">
                         <h2 class="unselectable index-article-title" id="index-keyboard-toggle"> Custom Keyboard</h3>
                         <h3 class="unselectable index-article-overview" id="index-keyboard-overview">Custom unibody split ortholinear keyboard</h4>
                         <h4 class="unselectable index-article-language" id="index-keyboard-language">
@@ -322,7 +322,7 @@
                         </h4>
                         <h4 class="unselectable index-article-date" id="index-keyboard-date">Date of first post: TBD</h4>
                     </article>
-                    <article class="index-article-blog" id="index-tui-blog" onclick="toggleElementElement('tui-blog', 'index-tui-toggle', ' First TUI', ' First TUI')">
+                    <article class="index-article-blog" id="index-tui-blog" onclick="toggleElement('tui-blog', 'index-tui-toggle', ' First TUI', ' First TUI')">
                         <h2 class="unselectable index-article-title" id="index-tui-toggle"> First TUI</h3>
                         <h3 class="unselectable index-article-overview" id="index-tui-overview">Development blog of my first TUI application</h4>
                         <h4 class="unselectable index-article-language" id="index-tui-language">Written in: <span class="language"><a href="https://rust-lang.org" target="_blank">Rust</a></span></h4>
@@ -332,7 +332,7 @@
                         <h1>test</h1>
                     </section>
                     <section class="blog-section" id="keyboard-blog" style="display: none;">
-                        <h1></h1>
+                        <h1>test</h1>
                     </section>
                 </main>
                 -->
@@ -353,7 +353,7 @@
                             Index:
                         </h1>
                         <br class="unselectable">
-                        <h3 class="h3-index-month" id="index-month" onclick="toggleElement('0824', 'index-month', ' August, 2024', ' August, 2024')"> August, 2024</h3>
+                        <h3 class="h3-index-month" id="index-month-aug" onclick="toggleElement('0824', 'index-month-aug', ' August, 2024', ' August, 2024')"> August, 2024</h3>
                         <ul class="index" id="0824">
                             <h3 class="h3-index-week" id="index-week-one-aug" onclick="toggleElement('0824W1', 'index-week-one-aug', ' August, Week One', ' August, Week One')"> August, Week One</h3>
                             <ul class="index" id="0824W1" style="display: none;">
@@ -379,10 +379,14 @@
                                 <a class="index-index" onclick="scrollToDiv('082924')">Thursday, 29th</a>
                                 <a class="index-index" onclick="scrollToDiv('083024')">Friday, 30th</a>
                             </ul>
-                            <h3 class="h3-index-week" id="index-week-four-aug" onclick="toggleElement('0824W4', 'index-week-four-aug', ' August, Week Four', ' August, Week Four')"> August, Week Four</h3>
-                            <ul class="index" id="0824W4" style="display: none;">
+                        </ul>
+                        <h3 class="h3-index-month" id="index-month-sep" onclick="toggleElement('0924', 'index-month-sep', ' September, 2024', ' September, 2024')"> September, 2024</h3>
+                        <ul class="index" id="0924">
+                            <h3 class="h3-index-week" id="index-week-four-sep" onclick="toggleElement('0924W4', 'index-week-four-sep', ' September, Week Four', ' September, Week Four')"> September, Week Four</h3>
+                            <ul class="index" id="0924W4" style="display: none;">
                                 <a class="index-index" onclick="scrollToDiv('090424')">Wednesday, 4th</a>
                                 <a class="index-index" onclick="scrollToDiv('090524')">Thursday, 5th</a>
+                                <a class="index-index" onclick="scrollToDiv('090624')">Friday, 6th</a>
                             </ul>
                         </ul>
                         <br class="unselectable">
@@ -793,6 +797,23 @@
                         <ul>
                             <li>Chapter one</li>
                             <p>Moving on to chapter two...</p>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section id="090624" class="entry">
+                        <h2>Friday, 6th, Aug Entry</h2>
+                        <br class="unselectable">
+                        <h3>
+                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                        </h3>
+                        <br class="unselectable">
+                        <h4 class="objective">Objective:</h4>
+                        <ul>
+                            <li>Apply the facts from your presentation to help others understand hardware/software and CS foundation.</li>
+                        </ul>
+                        <h4 class="done">Accomplished:</h4>
+                        <ul>
+                            <li>Worked on Keyboard for competition</li>
                         </ul>
                     </section>
                     <hr>
