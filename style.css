@@ -272,6 +272,14 @@ nav {
 
 #devblog-container { margin: 0em 0em 5em 0em; }
 
+.blog-section {
+  margin: 1em;
+  border: 0.125em solid #bbb;
+  border-radius: 2em;
+  padding: 1em;
+  background-color: #ddd;
+}
+
 .index-article-blog {
   background-color: #cdcdcd;
   border: 0.125em solid #ddd;
