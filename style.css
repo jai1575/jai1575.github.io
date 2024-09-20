@@ -316,6 +316,14 @@ nav {
   background-color: #ddd;
 }
 
+.code-block {
+  border: 0.125em solid #ddd;
+  border-radius: 0.25em;
+  background-color: #CDCED0;
+  padding: 0em 0.25em;
+  transition: 500ms ease-in-out;
+}
+
 .language {
   border: 0.125em solid #ddd;
   border-radius: 0.25em;

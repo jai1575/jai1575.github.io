@@ -379,7 +379,6 @@
                                     <li><a href="https://goblintechkeys.com/blogs/news/building-your-own-custom-mechanical-keyboard-from-barebone-kit" target="_blank" class="link">Basic Custom Keyboard Guide from Barebone Kit</a></li>
                                     <li><a href="https://www.tech-sparks.com/keyboard-pcb-design/" target="_blank" class="link">Keyboard PCB Design</a></li>
                                 </div>
-                                <!--
                                 <hr>
                                 <div class="blog-div" id="keyboard-blog-div-kbdlayout">
                                     <h1 style="margin: 0em 0em 1em 0em;">Designing Keyboard Layout</h1>
@@ -392,11 +391,16 @@
                                         <li class="no-indent"><a class="link" href="https://docs.qmk.fm/#/keycodes_basic" target="_blank">Keycodes both for QMK and VIA</a></li>
                                     </ul>
                                     <p class="no-indent">For our keyboard we will use keyboard-layout-editor.com the third link listed. By navigating to the raw data tab we can edit the layout directly through a simple JSON like language.</p>
-                                    <p class="no-indent">We use various HTML keycodes for special characters like arrow and media icons. The language is well documented and can be found @ <a class="link" href="https://github.com/ijprest/keyboard-layout-editor/wiki/Serialized-Data-Format" target="_blank">github wiki (docs)</a></p>
-                                    <p>For this keyboard we will use letters with function keys available on different mode. Using the r & rx modifiers we can tilt it, for we'll make a split keyboard that is ortholinear(in a grid layout).</p>
-                                    <p class="add-indent-half bold">Raw Data:</p>
+                                    <p class="no-indent">we use various html keycodes for special characters like arrow and media icons. the language is well documented and can be found @ <a class="link" href="https://github.com/ijprest/keyboard-layout-editor/wiki/serialized-data-format" target="_blank">github wiki (docs)</a></p>
+                                    <p>For this keyboard we will use a customized 60 percent split layout.</p>
+                                    <li>Syntax is fairly basic</li>
+                                    <li class="add-indent-half bold">Raw Data Example:</li>
+                                    <ul>
+                                        <p style="white-space: pre;" class="code-block">[<br>  {r:8,rx:0.45}, {a:1}, "~\n`\n\n\n\nesc", "!\n1\n\n\n\nF1", "@\n2\n\n\n\nF2", "#\n3\n\n\n\nF3", "$\n4\n\n\n\nF4", "%\n5\n\n\n\nF5" <br>],<br>[<br>  {r:-8,rx:7,ry:0.85}, {a:1}, "^\n6\n\n\n\nF6", "&\n7\n\n\n\nF7", "*\n8\n\n\n\nF8", "(\n9\n\n\n\nF9", ")\n0\n\n\n\nF10", "_\n-\n\n\n\nF11", "+\n=\n\n\n\nF12"<br>]</p>
+                                        <li>The keyboard is split with <span class="language">{r:8,rx:0.45}</span>. rx changes the offset on the x axis.</li>
+                                        <li>Changing the position using <span class="language">{a:1}</span></li>
+                                    </ul>
                                 </div>
-                                -->
                             </div>
                         </section>
                         <section class="blog-toc">
