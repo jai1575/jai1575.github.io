@@ -25,6 +25,7 @@
   .img-photo-home { width: 10rem; }
   #csjournal-container, #devblog-container { width: 40%; }
   html, body { font-size: 1em; }
+  .blog-container-container { margin: -3em 12em; }
 }
 
 @media only screen and (min-width: 1080px) and (max-width: 2160px){
@@ -43,6 +44,7 @@
   .img-photo-home { width: 10rem; }
   #csjournal-container, #devblog-container { width: 60%; }
   html, body { font-size: 1em; }
+  .blog-container-container { margin: -3em 8em; }
 }
 
 @media only screen and (min-width: 680px) and (max-width: 1080px) {
@@ -61,6 +63,7 @@
   .img-photo-home { width: 10rem; }
   #csjournal-container, #devblog-container { width: 70%; }
   html, body { font-size: 1em; }
+  .blog-container-container { margin: -3em 4em; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 680px) {
@@ -86,6 +89,7 @@
   .img-photo-home { width: 10rem; }
   #csjournal-container, #devblog-container { width: 90%; }
   html, body { font-size: 1em; }
+  .blog-container-container { margin: -3em 0em; }
 }
 
 @media only screen and (max-width: 480px) and (min-width: 360px) {
@@ -115,6 +119,7 @@
   #home-headline-container { flex-direction: column; }
   .img-photo-home { width: 8em; }
   html, body { font-size: 1em; }
+  .blog-container-container { margin: -3em 0em; }
 }
 
 @media only screen and (max-width: 360px) {
@@ -153,6 +158,7 @@
   .img-photo-home { width: 5em; }
   #csjournal-container, #devblog-container { width: 100%; }
   html, body { font-size: 1em; }
+  .blog-container-container { margin: -3em 0em; }
 }
 
 ul {
@@ -194,8 +200,6 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   font-weight: normal;
 }
-
-h2 { color: #343268; }
 
 h3 a {
   text-decoration: none;
@@ -272,11 +276,29 @@ nav {
 
 #devblog-container { margin: 0em 0em 5em 0em; }
 
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .blog-section {
   margin: 1em;
   border-radius: 1em;
-  padding: 1em;
+  padding: 1.5em 5em 1.5em 2em;
   background-color: #cdcdcd;
+}
+
+.blog-div {
+  transition: 1s;
+}
+
+.blog-toc {
+  margin: 1em;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: #ababab;
+  color: #cdcdcd;
 }
 
 .index-article-blog {
@@ -292,11 +314,6 @@ nav {
 
 .index-article-blog:hover {
   background-color: #ddd;
-}
-
-.unselectable {
-  --webkit-user-select: none;
-  user-select: none;
 }
 
 .language {
@@ -323,6 +340,10 @@ nav {
   flex-direction: column;
   align-items: center;
 }
+
+#csjournal-top { transition: 1s; }
+
+.journal-h2 { color: #343268; }
 
 #csjournal-container { margin: 0em 0em 5em 0em; }
 
@@ -396,8 +417,6 @@ nav {
   border-radius: 0.25em; 
 }
 
-.entry p { margin: 1em 0em; }
-
 .important { font-size: 1.35em; }
 
 .learned, .answer, .objective, .question, .done {
@@ -414,8 +433,50 @@ nav {
 .answer, .learned {
   color: #663434;
 }
+
+.unselectable {
+  --webkit-user-select: none;
+  user-select: none;
+}
+
 .no-indent {
+  margin: 0em;
+}
+.no-indent-horiz {
   margin: 1em 0em;
+}
+.no-indent-vert {
+  margin: 0em 1em;
+}
+
+.add-indent-half {
+  margin: 0em 0.25em;
+}
+.add-half {
+  margin:0.25em;
+}
+.add-indent {
+  margin: 0em 1em;
+}
+.add-indent-two {
+  margin: 0em 2em;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.blog-hr {
+  background-color: #cdcdcd;
+}
+
+.link {
+  color: #3B3892;
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 #projects { background-color: #ccc; }

@@ -4,8 +4,6 @@ var devb = "devblog";
 var proj = "projects";
 var blogone = "keyboard-blog";
 var blogtwo = "tui-blog";
-var blogone_toggle = "index-keyboard-toggle";
-var blogtwo_toggle = "index-tui-toggle";
 var home_txt = "Home";
 var csjo_txt = "CS Journal";
 var devb_txt = "Blog";
@@ -42,30 +40,28 @@ function toggle(page) {
         }
     }
 }
-function toggleElementElement(element, parent_element, on_txt, off_txt) {
+function toggleOnlyElement(element, parent_element, on_txt, off_txt) {
     var elm = document.getElementById(element);
     var parElm = document.getElementById(parent_element);
     var elms = [blogone, blogtwo];
-    var elms_tog = [blogone_toggle, blogtwo_toggle];
-    for (var i = 0; i < elms.length; i++) {
-        if (elm[i] !== element) {
-            document.getElementById(elms[i]).style.display = "none";
-            document.getElementById("index-" + elms[i]).style.display = "";
-        }
-        if (elms_tog[i] !== parent_element) {
-            document.getElementById(elms_tog[i]).innerHTML.replace("", "");
-        }
-    }
-    if (elm.style.display === "none") {
-        elm.style.display = "";
-        if (on_txt) {
-            parElm.innerHTML = on_txt;
-        }
-    }
-    else {
+    if (parElm.innerHTML === on_txt) {
+        parElm.innerHTML = off_txt;
         elm.style.display = "none";
-        if (off_txt) {
-            parElm.innerHTML = off_txt;
+    }
+    else if (parElm.innerHTML === off_txt) {
+        parElm.innerHTML = on_txt;
+        elm.style.display = "flex";
+    }
+    for (var i = 0; i <= elms.length; i++) {
+        if (elms[i] !== element) {
+            if (parElm.innerHTML === on_txt) {
+                document.getElementById(elms[i]).style.display = "none";
+                document.getElementById("index-" + elms[i]).style.display = "none";
+            }
+            else if (parElm.innerHTML === off_txt) {
+                document.getElementById(elms[i]).style.display = "none";
+                document.getElementById("index-" + elms[i]).style.display = "";
+            }
         }
     }
 }

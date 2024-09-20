@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
+    <script type="text/javascript" src="./src/script.js"></script>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/png" href="image/icon_white.png">
-        <script type="text/javascript" src="./src/script.js"></script>
         <title>Jai</title>
     </head>
 
@@ -302,6 +302,7 @@
             </div>
             <div id="devblog" class="column" style="display: none;">
                 <!--
+                -->
                 <main id="devblog-container">
                     <header class="unselectable">
                         <h1 id="h1-csjournal-top">
@@ -311,32 +312,104 @@
                         <br>
                       <br>
                     </header>
-                    <article class="index-article-blog" id="index-keyboard-blog" onclick="toggleElement('keyboard-blog', 'index-keyboard-toggle', ' Custom Keyboard', ' Custom Keyboard')">
+                    <article class="index-article-blog" id="index-keyboard-blog" onclick="toggleOnlyElement('keyboard-blog', 'index-keyboard-toggle', ' Custom Keyboard', ' Custom Keyboard')">
                         <h2 class="unselectable index-article-title" id="index-keyboard-toggle"> Custom Keyboard</h3>
                         <h3 class="unselectable index-article-overview" id="index-keyboard-overview">Custom unibody split ortholinear keyboard</h4>
                         <h4 class="unselectable index-article-language" id="index-keyboard-language">
                             Using:
                             <span class="language"><a href="https://www.cprogramming.com" target="_blank">C Language</a></span>
+                            <span class="language"><a href="" target="_blank">JSON</a></span>
                             <span class="language"><a href="https://qmk.fm" target="_blank">QMK/VIA</a></span>
                             <span class="language"><a href="https://nicekeyboards.com/nice-nano" target="_blank">Nice Nano Microcontroller</a></span>
                         </h4>
-                        <h4 class="unselectable index-article-date" id="index-keyboard-date">Date of first post: TBD</h4>
+                        <h4 class="unselectable index-article-date" id="index-keyboard-date">Date of first post: 1726464390 ~ unix timestamp</h4>
                     </article>
-                    <article class="index-article-blog" id="index-tui-blog" onclick="toggleElement('tui-blog', 'index-tui-toggle', ' First TUI', ' First TUI')">
+                </main>
+                <div class="blog-container-container">
+                    <!--
+                    <article class="index-article-blog" id="index-tui-blog" onclick="toggleOnlyElement('tui-blog', 'index-tui-toggle', ' First TUI', ' First TUI')">
                         <h2 class="unselectable index-article-title" id="index-tui-toggle"> First TUI</h3>
                         <h3 class="unselectable index-article-overview" id="index-tui-overview">Development blog of my first TUI application</h4>
                         <h4 class="unselectable index-article-language" id="index-tui-language">Written in: <span class="language"><a href="https://rust-lang.org" target="_blank">Rust</a></span></h4>
                         <h4 class="unselectable index-article-date" id="index-tui-date">Date of first post: TBD</h4>
                     </article>
-                    <section class="blog-section" id="tui-blog" style="display: none;">
-                        <h1>test</h1>
-                    </section>
-                    <section class="blog-section" id="keyboard-blog" style="display: none;">
-                        <h1>Getting started</h1>
-                        <p>Testins </p>
-                    </section>
-                </main>
-                -->
+                    <div class="blog-container" id="tui-blog" style="display: none;">
+                        <section class="blog-section">
+                            <h1>test</h1>
+                        </section>
+                    </div>
+                    -->
+                    <div class="blog-container" id="keyboard-blog" style="display: none;">
+                        <section class="blog-section">
+                            <div class="blog-div" id="keyboard-blog-div-foundation">
+                                <div class="blog-div" id="keyboard-blog-div-gettingstarted">
+                                    <h1 style="margin: 0em 0em 1em 0em;">Getting started</h1>
+                                    <p class="no-indent">First we'll look into the process of keyboard manufacturing; this will serve as a guide for our development. Looking into the manufacturing process can also give us insight so we can thoughtfully plan as we go along, to stay in scope.</p>
+                                    <p class="add-half bold">Keyboard manufacturing process:</p>
+                                    <ul>
+                                        <p class="no-indent"><span class="bold">1.</span> Keyboard Layout</p>
+                                        <p class="no-indent"><span class="bold">2.</span> Plate Position</p>
+                                        <p class="no-indent"><span class="bold">3.</span> Firmware</p>
+                                        <p class="no-indent"><span class="bold">4.</span> PCB Design</p>
+                                        <p class="no-indent"><span class="bold">5.</span> 3D Modeling</p>
+                                        <p class="no-indent"><span class="bold">6.</span> Assembly</p>
+                                    </ul>
+                                    <p class="add-half">In this blog I'll be making a split unibody ortholinear keyboard. Making a keyboard that suits you is the main reason for this. It is important that you make this keyboard with your priorities in mind. Here are some factors you should take into account.</p>
+                                    <p class="add-half bold">Considerations:</p>
+                                    <ul>
+                                        <li>What <span class="bold">features</span> would you'd like to see?</li>
+                                        <li class="add-indent-half">What <span class="bold">problems</span> do you have with your <span class="bold">current keyboard</span> and how can you fix them?</li>
+                                        <li>What <span class="bold">layout</span> suits you?</li>
+                                        <ul>
+                                            <li class="add-indent-half">Split</li>
+                                            <li class="add-indent-half">Ortholinear</li>
+                                            <li class="add-indent-half">Staggered</li>
+                                            <li class="add-indent-half">Column staggered</li>
+                                        </ul>
+                                        <li><span class="bold">Looks?</span> What do you consider a good looking keyboard to be?</li>
+                                        <ul>
+                                            <li class="add-indent-half">What <span class="bold">materials</span> do you want to be used?</li>
+                                            <p class="no-indent">These will contribute to the perceived quality and feel of the keyboard.</p>
+                                        </ul>
+                                        <li>How do you want the <span class="bold">keyboard</span> to be <span class="bold">assembled</span>? There are many ways to mount the keyboard pcb, plate, case, and many other optional parts. How do you want to mount them?</li>
+                                    </ul>
+                                    <p class="no-indent">I'd also like to bring attention to the various sources used:</p>
+                                    <li><a href="https://www.tech-sparks.com/pcb-design-tutorial/" target="_blank" class="link">PCB Layout Deisgn for Beginners</a></li>
+                                    <li><a href="https://www.tech-sparks.com/diy-mechanical-keyboard/" target="_blank" class="link">DIY Mechanical Keyboard</a></li>
+                                    <li><a href="https://goblintechkeys.com/blogs/news/building-your-own-custom-mechanical-keyboard-from-barebone-kit" target="_blank" class="link">Basic Custom Keyboard Guide from Barebone Kit</a></li>
+                                    <li><a href="https://www.tech-sparks.com/keyboard-pcb-design/" target="_blank" class="link">Keyboard PCB Design</a></li>
+                                </div>
+                                <!--
+                                <hr>
+                                <div class="blog-div" id="keyboard-blog-div-kbdlayout">
+                                    <h1 style="margin: 0em 0em 1em 0em;">Designing Keyboard Layout</h1>
+                                    <p class="no-indent">Making the keyboard layout can be done in quite a few ways.</p>
+                                    <p class="add-indent-half bold">Here are some:</p>
+                                    <ul>
+                                        <li class="no-indent"><a class="link" href="https://docs.qmk.fm/feature_layouts" target="_blank">QMK with C</a></li>
+                                        <li class="no-indent"><a class="link" href="https://www.caniusevia.com/docs/layouts/" target="_blank">VIA with JSON</a></li>
+                                        <li class="no-indent"><a class="link" href="http://www.keyboard-layout-editor.com/#/" target="_blank">Keyboard Layout Editor Website</a></li>
+                                        <li class="no-indent"><a class="link" href="https://docs.qmk.fm/#/keycodes_basic" target="_blank">Keycodes both for QMK and VIA</a></li>
+                                    </ul>
+                                    <p class="no-indent">For our keyboard we will use keyboard-layout-editor.com the third link listed. By navigating to the raw data tab we can edit the layout directly through a simple JSON like language.</p>
+                                    <p class="no-indent">We use various HTML keycodes for special characters like arrow and media icons. The language is well documented and can be found @ <a class="link" href="https://github.com/ijprest/keyboard-layout-editor/wiki/Serialized-Data-Format" target="_blank">github wiki (docs)</a></p>
+                                    <p>For this keyboard we will use letters with function keys available on different mode. Using the r & rx modifiers we can tilt it, for we'll make a split keyboard that is ortholinear(in a grid layout).</p>
+                                    <p class="add-indent-half bold">Raw Data:</p>
+                                </div>
+                                -->
+                            </div>
+                        </section>
+                        <section class="blog-toc">
+                            <h1 class="unselectable">Table Of Contents</h1>
+                            <hr class="blog-hr">
+                            <h2 class="unselectable add-indent-half click" onclick="scrollToDiv('keyboard-blog-div-foundation')">1. Foundation</h2>
+                            <h3 class="unselectable add-indent click" onclick="scrollToDiv('keyboard-blog-div-gettingstarted')">1.1. Getting Started</h3>
+                            <!--
+                            <h3 class="unselectable add-indent click" onclick="scrollToDiv('keyboard-blog-div-kbdlayout')">1.2. Designing Keyboard Layout</h3>
+                            -->
+                        </section>
+                    </div>
+                </div>
             </div>
             <div  id="csjournal" class="column" style="display: none;">
                 <main id="csjournal-container">
@@ -354,8 +427,8 @@
                             Index:
                         </h1>
                         <br class="unselectable">
-                        <h3 class="h3-index-month" id="index-month-aug" onclick="toggleElement('0824', 'index-month-aug', ' August, 2024', ' August, 2024')"> August, 2024</h3>
-                        <ul class="index" id="0824">
+                        <h3 class="h3-index-month" id="index-month-aug" onclick="toggleElement('0824', 'index-month-aug', ' August, 2024', ' August, 2024')"> August, 2024</h3>
+                        <ul class="index" id="0824" style="display: none;">
                             <h3 class="h3-index-week" id="index-week-one-aug" onclick="toggleElement('0824W1', 'index-week-one-aug', ' August, Week One', ' August, Week One')"> August, Week One</h3>
                             <ul class="index" id="0824W1" style="display: none;">
                                 <a class="index-index" onclick="scrollToDiv('081224')">Monday, 12th</a>
@@ -395,8 +468,18 @@
                                 <a class="index-index" onclick="scrollToDiv('091024')">Tuesday, 10th</a>
                                 <a class="index-index" onclick="scrollToDiv('091124')">Wednesday, 11th</a>
                                 <a class="index-index" onclick="scrollToDiv('091224')">Thursday, 12th</a>
-                                <!--
                                 <a class="index-index" onclick="scrollToDiv('091324')">Friday, 13th</a>
+                            </ul>
+                            <h3 class="h3-index-week" id="index-week-six-sep" onclick="toggleElement('0924W6', 'index-week-six-sep', ' September, Week Six', ' September, Week Six')"> September, Week Six</h3>
+                            <ul class="index" id="0924W6" style="display: none;">
+                                <!--
+                                <a class="index-index" onclick="scrollToDiv('091624')">Monday, 16th</a>
+                                -->
+                                <a class="index-index" onclick="scrollToDiv('091724')">Tuesday, 17th</a>
+                                <a class="index-index" onclick="scrollToDiv('091824')">Wednesday, 18th</a>
+                                <!--
+                                <a class="index-index" onclick="scrollToDiv('091924')">Thursday, 19th</a>
+                                <a class="index-index" onclick="scrollToDiv('092024')">Friday, 20th</a>
                                 -->
                             </ul>
                         </ul>
@@ -404,15 +487,15 @@
                     </article>
                     <hr>
                     <section id="081224" class="entry">
-                        <h2>Monday, 12th, Aug Entry</h2>
+                        <h2 class="journal-h2">Monday, 12th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="answer">Null Entry:</h4>
                         <ul>
-                            <p class="no-indent">Things you can do:</p>
+                            <p class="no-indent-horiz">Things you can do:</p>
                             <li>Check if site is in development</li>
                             <li>Hang out with friends or family</li>
                             <li>Contact jai1575</li>
@@ -422,10 +505,10 @@
                     </section>
                     <hr>
                     <section id="081324" class="entry">
-                        <h2>Tuesday, 13th, Aug Entry</h2>
+                        <h2 class="journal-h2">Tuesday, 13th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a> </h3>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a> </h3>
                         <br class="unselectable">
                         <h4 class="question">Question:</h4>
                         <ul>
@@ -451,10 +534,10 @@
                     </section>
                     <hr>
                     <section id="081424" class="entry">
-                        <h2>Wednesday, 14th, Aug Entry</h2>
+                        <h2 class="journal-h2">Wednesday, 14th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -472,10 +555,10 @@
                     </section>
                     <hr>
                     <section id="081524" class="entry">
-                        <h2>Thursday, 15th, Aug Entry</h2>
+                        <h2 class="journal-h2">Thursday, 15th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="learned">Learned:</h4>
@@ -493,10 +576,10 @@
                     </section>
                     <hr>
                     <section id="081624" class="entry">
-                        <h2>Friday, 16th, Aug Entry</h2>
+                        <h2 class="journal-h2">Friday, 16th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -511,10 +594,10 @@
                     </section>
                     <hr>
                     <section id="081924" class="entry">
-                        <h2>Monday, 19th, Aug Entry</h2>
+                        <h2 class="journal-h2">Monday, 19th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -540,19 +623,19 @@
                     </section>
                     <hr>
                     <section id="082024" class="entry">
-                        <h2>Tuesday, 20th, Aug Entry</h2>
+                        <h2 class="journal-h2">Tuesday, 20th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
                             <ul>
-                                <li class="no-indent">Continue to analyze the early history of computing and its people in order to create a system of knowing and show respect.</li>
+                                <li class="no-indent-horiz">Continue to analyze the early history of computing and its people in order to create a system of knowing and show respect.</li>
                             </ul>
                         <h4 class="learned">Learned:</h4>
                             <ul>
-                                <li class="no-indent">Scanning text to find a line that can give you a rundown of the article is an effective way to get information fast.</li>
+                                <li class="no-indent-horiz">Scanning text to find a line that can give you a rundown of the article is an effective way to get information fast.</li>
                             </ul>
                         <h4 class="question">Question:</h4>
                             <ul>
@@ -565,15 +648,15 @@
                     </section>
                     <hr>
                     <section id="082124" class="entry">
-                        <h2>Wednesday, 21st, Aug Entry</h2>
+                        <h2 class="journal-h2">Wednesday, 21st, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="answer">Null Entry:</h4>
                         <ul>
-                            <p class="no-indent">Things you can do:</p>
+                            <p class="no-indent-horiz">Things you can do:</p>
                             <li>Check if site is in development</li>
                             <li>Hang out with friends or family</li>
                             <li>Contact jai1575</li>
@@ -583,19 +666,19 @@
                     </section>
                     <hr>
                     <section id="082224" class="entry">
-                        <h2>Thursday, 22nd, Aug Entry</h2>
+                        <h2 class="journal-h2">Thursday, 22nd, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
                             <ul>
-                                <li class="no-indent">Analyze the material in Chapter 1 you want to know to help build foundational knowledge in Computer Science.</li>
+                                <li class="no-indent-horiz">Analyze the material in Chapter 1 you want to know to help build foundational knowledge in Computer Science.</li>
                             </ul>
                         <h4 class="learned">Learned:</h4>
                             <ul>
-                                <p class="no-indent">Scanning text to find a line that can give you a rundown of the article is an effective way to get information fast.</p>
+                                <p class="no-indent-horiz">Scanning text to find a line that can give you a rundown of the article is an effective way to get information fast.</p>
                             </ul>
                         <h4 class="question">Question:</h4>
                             <ul>
@@ -608,10 +691,10 @@
                     </section>
                     <hr>
                     <section id="082324" class="entry">
-                        <h2>Friday, 23rd, Aug Entry</h2>
+                        <h2 class="journal-h2">Friday, 23rd, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="question">Questions:</h4>
@@ -634,10 +717,10 @@
                     </section>
                     <hr>
                     <section id="082624" class="entry">
-                        <h2>Monday, 26th, Aug Entry</h2>
+                        <h2 class="journal-h2">Monday, 26th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -669,10 +752,10 @@
                     </section>
                     <hr>
                     <section id="082724" class="entry">
-                        <h2>Tuesday, 27th, Aug Entry</h2>
+                        <h2 class="journal-h2">Tuesday, 27th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -695,10 +778,10 @@
                     </section>
                     <hr>
                     <section id="082824" class="entry">
-                        <h2>Wednesday, 28th, Aug Entry</h2>
+                        <h2 class="journal-h2">Wednesday, 28th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -719,10 +802,10 @@
                     </section>
                     <hr>
                     <section id="082924" class="entry">
-                        <h2>Thursday, 29th, Aug Entry</h2>
+                        <h2 class="journal-h2">Thursday, 29th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -736,10 +819,10 @@
                     </section>
                     <hr>
                     <section id="083024" class="entry">
-                        <h2>Friday, 30th, Aug Entry</h2>
+                        <h2 class="journal-h2">Friday, 30th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="done">Accomplished:</h4>
@@ -749,10 +832,10 @@
                     </section>
                     <hr>
                     <section id="090424" class="entry">
-                        <h2>Wednesday, 4th, Aug Entry</h2>
+                        <h2 class="journal-h2">Wednesday, 4th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -782,10 +865,10 @@
                     </section>
                     <hr>
                     <section id="090524" class="entry">
-                        <h2>Thursday, 5th, Aug Entry</h2>
+                        <h2 class="journal-h2">Thursday, 5th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -812,10 +895,10 @@
                     </section>
                     <hr>
                     <section id="090624" class="entry">
-                        <h2>Friday, 6th, Aug Entry</h2>
+                        <h2 class="journal-h2">Friday, 6th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -829,10 +912,10 @@
                     </section>
                     <hr>
                     <section id="090924" class="entry">
-                        <h2>Monday, 9th, Aug Entry</h2>
+                        <h2 class="journal-h2">Monday, 9th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -846,10 +929,10 @@
                     </section>
                     <hr>
                     <section id="091024" class="entry">
-                        <h2>Tuesday, 10th, Aug Entry</h2>
+                        <h2 class="journal-h2">Tuesday, 10th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -868,10 +951,10 @@
                     </section>
                     <hr>
                     <section id="091124" class="entry">
-                        <h2>Wednesday, 11th, Aug Entry</h2>
+                        <h2 class="journal-h2">Wednesday, 11th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="question">Question:</h4>
@@ -885,10 +968,10 @@
                     </section>
                     <hr>
                     <section id="091224" class="entry">
-                        <h2>Thursday, 12th, Aug Entry</h2>
+                        <h2 class="journal-h2">Thursday, 12th, Aug Entry</h2>
                         <br class="unselectable">
                         <h3>
-                            <a onclick="scrollToDiv('h1-csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
                         </h3>
                         <br class="unselectable">
                         <h4 class="objective">Objective:</h4>
@@ -903,7 +986,83 @@
                         <ul>
                             <p>Binary numbers are those in the base of 2 because there are only two numbers, one and zero. Computers use binary numbers because they can be easily represented with high or low voltage. Because binary is used in computers a lot of abstraction is used on the front-end.</p>
                             <li class="important">&Sigma;( b<sub>i</sub> &bull; q<sup>i</sup> ) </li>
-                            <p class="no-indent" style="font-size: 1.15em;">Where i is the iterated number, i equals zero, and ends at the length of the number you're trying to convert</p>
+                            <p class="no-indent-horiz" style="font-size: 1.15em;">Where i is the iterated number, i equals zero, and ends at the length of the number you're trying to convert</p>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section id="091324" class="entry">
+                        <h2 class="journal-h2">Friday, 13th, Aug Entry</h2>
+                        <br class="unselectable">
+                        <h3>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                        </h3>
+                        <br class="unselectable">
+                        <h4 class="objective">Objective:</h4>
+                        <ul>
+                            <li>Independent work</li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section id="091724" class="entry">
+                        <h2 class="journal-h2">Tuesday, 17th, Aug Entry</h2>
+                        <br class="unselectable">
+                        <h3>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                        </h3>
+                        <br class="unselectable">
+                        <h4 class="objective">Objective:</h4>
+                        <ul>
+                            <li>Analyze the material in Chapter 2, including binary values.</li>
+                        </ul>
+                        <h4 class="done">Accomplished:</h4>
+                        <ul>
+                            <li>Review of Chapter 2 questions</li>
+                        </ul>
+                        <h4 class="answer">Answer:</h4>
+                        <ul>
+                            <li>To base ten conversion</li>
+                            <ul>
+                                <p class="no-indent">1: 111(base 2) => 7(base 10) ~ Correct</p>
+                                <p class="no-indent">2: 777(base 8) => 511(base 10) ~ Correct</p>
+                                <p class="no-indent">3: FEC(base 16) => 3,311(base 10) ~ Incorrect</p>
+                                <p class="add-indent">3.1: FEC(base 16) => 4,072(base 10) ~ Correct</p>
+                                <p class="add-indent">3.2: I was incorrect, for my positional notation was reversed.</p>
+                                <p class="add-indent">3.2: I did:</p>
+                                <p class="add-indent-two">(15*16^0) = x</p>
+                                <p class="add-indent-two">(14*16^1) = y</p>
+                                <p class="add-indent-two">(12*16^2) = z</p>
+                                <p class="add-indent-two">x + y + z = incorrect answer</p>
+                                <p class="add-indent">3.2: I did this to fix it:</p>
+                                <p class="add-indent-two">(12*16^0) = a</p>
+                                <p class="add-indent-two">(14*16^1) = b</p>
+                                <p class="add-indent-two">(15*16^2) = c</p>
+                                <p class="add-indent-two">a + b + c = correct answer</p>
+                                <p class="no-indent">4: 777(base 16) => 1,911(base 10) ~ Correct</p>
+                                <p class="no-indent">5: 111(base 8) => 73(base 10) ~ Correct</p>
+                            </ul>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section id="091824" class="entry">
+                        <h2 class="journal-h2">Wednesday, 18th, Aug Entry</h2>
+                        <br class="unselectable">
+                        <h3>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                        </h3>
+                        <br class="unselectable">
+                        <h4 class="objective">Objective:</h4>
+                        <ul>
+                            <li>Understand the Information Layer of computers through converting Power-Of-2 number systems, base 10 to other bases and the relationship of binary values to computers.</li>
+                        </ul>
+                        <h4 class="question">Question:</h4>
+                        <ul>
+                            <p>1: What is this? Correct option is C (IE = IC + IB), try to deduce what the question is.</p>
+                            <p>2: What do we want to know & how do we best learn?</p>
+                        </ul>
+                        <h4 class="answer">Answer:</h4>
+                        <ul>
+                            <p>1: The question must be related to the current of the emitter. We can conclude the question is: What is IE equal to?</p>
+                            <p>2: I want to learn the subject by creating a calculator that can actively convert and calculate values in different bases.</p>
                         </ul>
                     </section>
                     <hr>
