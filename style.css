@@ -21,11 +21,12 @@
   }
   #menu-button-mob { display: none; }
   #mobile-menu-items { display: none; }
-  #home-container { width: 30%; }
+  #home-container { width: 50%; }
   .img-photo-home { width: 10rem; }
   #csjournal-container, #devblog-container { width: 40%; }
-  html, body { font-size: 1em; }
-  .blog-container-container { margin: -3em 12em; }
+  html, body { font-size: 1.2em; }
+  .blog-container-container { margin: -3em 9em; }
+  .blog-toc { font-size: 1.1em; position: absolute; right: 0.5em; bottom: 50%; }
 }
 
 @media only screen and (min-width: 1080px) and (max-width: 2160px){
@@ -40,11 +41,12 @@
   }
   #menu-button-mob { display: none; }
   #mobile-menu-items { display: none; }
-  #home-container { width: 55%; }
+  #home-container { width: 75%; }
   .img-photo-home { width: 10rem; }
   #csjournal-container, #devblog-container { width: 60%; }
-  html, body { font-size: 1em; }
-  .blog-container-container { margin: -3em 8em; }
+  html, body { font-size: 1.2em; }
+  .blog-container-container { margin: -3em 6em; }
+  .blog-toc { font-size: 1em; position: absolute; right: 0.5em; bottom: 1em; }
 }
 
 @media only screen and (min-width: 680px) and (max-width: 1080px) {
@@ -59,11 +61,12 @@
   }
   #menu-button-mob { display: none; }
   #mobile-menu-items { display: none; }
-  #home-container { width: 85%; }
+  #home-container { width: 100%; }
   .img-photo-home { width: 10rem; }
   #csjournal-container, #devblog-container { width: 70%; }
-  html, body { font-size: 1em; }
+  html, body { font-size: 1.1em; }
   .blog-container-container { margin: -3em 4em; }
+  .blog-toc { font-size: 0.9em; position: absolute; right: 0.5em; bottom: 0.5em; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 680px) {
@@ -87,8 +90,11 @@
   #mobile-menu-items { display: none; }
   #home-container { width: 100%; }
   .img-photo-home { width: 10rem; }
+  #home-headline-container { flex-direction: column; }
   #csjournal-container, #devblog-container { width: 90%; }
-  html, body { font-size: 1em; }
+  html, body { font-size: 1.05em; }
+  .blog-toc { font-size: 0.9em; }
+  .blog-container { flex-direction: column-reverse; }
   .blog-container-container { margin: -3em 0em; }
 }
 
@@ -118,8 +124,9 @@
   #csjournal-container, #devblog-container { width: 90%; }
   #home-headline-container { flex-direction: column; }
   .img-photo-home { width: 8em; }
-  html, body { font-size: 1em; }
+  html, body { font-size: 1.05em; }
   .blog-container-container { margin: -3em 0em; }
+  .blog-container { flex-direction: column-reverse; }
 }
 
 @media only screen and (max-width: 360px) {
@@ -147,6 +154,7 @@
     padding: 0.125em;
     font-size: 1.25em; 
   }
+  .blog-toc { display: none; }
   #csjournal-button-mob { display: none; }
   #devblog-button-mob { display: none; }
   #youtube-link-items { display: none; }
@@ -159,6 +167,7 @@
   #csjournal-container, #devblog-container { width: 100%; }
   html, body { font-size: 1em; }
   .blog-container-container { margin: -3em 0em; }
+  .blog-container { flex-direction: column-reverse; }
 }
 
 ul {
@@ -468,6 +477,9 @@ nav {
 }
 .add-indent-two {
   margin: 0em 2em;
+}
+.whitespace-indent {
+  margin: 0em 0.3em;
 }
 
 .click {
