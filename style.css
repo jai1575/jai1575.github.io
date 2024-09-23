@@ -310,6 +310,8 @@ nav {
   color: #cdcdcd;
 }
 
+#h1-blog-top { transition: 1s; }
+
 .index-article-blog {
   background-color: #cdcdcd;
   border: 0.125em solid #ddd;
@@ -497,6 +499,10 @@ nav {
 
 .bold {
   font-weight: bold;
+}
+
+.font-large {
+  font-size: 1.6em;
 }
 
 #projects { background-color: #ccc; }

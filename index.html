@@ -304,21 +304,20 @@
                 <!--
                 -->
                 <main id="devblog-container">
-                    <header class="unselectable">
-                        <h1 id="h1-csjournal-top">
+                    <header class="unselectable" id="h1-blog-top">
+                        <h1>
                             <br>
                             <strong>Blog Index:</strong>
                         </h1>
-                        <br>
                       <br>
                     </header>
+                    <br>
                     <article class="index-article-blog" id="index-keyboard-blog" onclick="toggleOnlyElement('keyboard-blog', 'index-keyboard-toggle', ' Custom Keyboard', ' Custom Keyboard')">
                         <h2 class="unselectable index-article-title" id="index-keyboard-toggle"> Custom Keyboard</h3>
                         <h3 class="unselectable index-article-overview" id="index-keyboard-overview">Custom unibody split ortholinear keyboard</h4>
                         <h4 class="unselectable index-article-language" id="index-keyboard-language">
                             Using:
-                            <span class="language"><a href="https://www.cprogramming.com" target="_blank">C Language</a></span>
-                            <span class="language"><a href="" target="_blank">JSON</a></span>
+                            <span class="language"><a href="https://www.keyboard-layout-editor.com" target="_blank">KBD Layout Editor</a></span>
                             <span class="language"><a href="https://qmk.fm" target="_blank">QMK/VIA</a></span>
                             <span class="language"><a href="https://nicekeyboards.com/nice-nano" target="_blank">Nice Nano Microcontroller</a></span>
                         </h4>
@@ -391,26 +390,27 @@
                                         <li class="no-indent"><a class="link" href="https://docs.qmk.fm/#/keycodes_basic" target="_blank">Keycodes both for QMK and VIA</a></li>
                                     </ul>
                                     <p class="no-indent">For our keyboard we will use keyboard-layout-editor.com the third link listed. By navigating to the raw data tab we can edit the layout directly through a simple JSON like language.</p>
-                                    <p class="no-indent">we use various html keycodes for special characters like arrow and media icons. the language is well documented and can be found @ <a class="link" href="https://github.com/ijprest/keyboard-layout-editor/wiki/serialized-data-format" target="_blank">github wiki (docs)</a></p>
+                                    <p class="no-indent">We use various html keycodes for special characters like arrow and media icons. The language is well documented and can be found @ <a class="link" href="https://github.com/ijprest/keyboard-layout-editor/wiki/serialized-data-format" target="_blank">github wiki (docs)</a></p>
                                     <p>For this keyboard we will use a customized 60 percent split layout.</p>
                                     <li class="add-indent-half bold">Raw Data Example:</li>
                                     <ul>
                                         <p class="code-block">[<br>  {r:8,rx:0.45}, {a:1}, "~\n`\n\n\n\nesc", "!\n1\n\n\n\nF1", "@\n2\n\n\n\nF2", "#\n3\n\n\n\nF3", "$\n4\n\n\n\nF4", "%\n5\n\n\n\nF5" <br>],<br>[<br>  {r:-8,rx:7,ry:0.85}, {a:1}, "^\n6\n\n\n\nF6", "&\n7\n\n\n\nF7", "*\n8\n\n\n\nF8", "(\n9\n\n\n\nF9", ")\n0\n\n\n\nF10", "_\n-\n\n\n\nF11", "+\n=\n\n\n\nF12"<br>]</p>
                                         <li>The keyboard is tilted with <span class="language">{<span class="whitespace-indent bold">r:8</span>,rx:0.45}</span></li>
-                                        <li>rx changes the offset on the x axis. r changes degree of tilt</li>
-                                        <li>Changing the position using <span class="language">{a:1}</span></li>
+                                        <p>Every quote <span class="language">""</span> defines one key in a row. Rows are defined with brackets <span class="language">[ ]</span> </p>
+                                        <li>Here is an example of the syntax</li>
+                                        <p class="code-block">[<br> "key one", "key two", "key three"<br>],<br>[<br> "key one of second row", "point made" <br>]</p>
+                                        <p><span class="language">rx</span> Changes the offset on the x axis. <span class="language">r</span> Changes degree of tilt. The position of the letters contained by quotes is changed with: <span class="language">{a:1}</span></p>
                                     </ul>
                                 </div>
                             </div>
                         </section>
                         <section class="blog-toc">
-                            <h1 class="unselectable">Table Of Contents</h1>
+                            <a onclick="scrollToDiv('h1-blog-top')" class="unselectable font-large click">Back To Top </a>
+                            <h1 class="unselectable add-half">Table Of Contents</h1>
                             <hr class="blog-hr">
                             <h2 class="unselectable add-indent-half click" onclick="scrollToDiv('keyboard-blog-div-foundation')">1. Foundation</h2>
                             <h3 class="unselectable add-indent click" onclick="scrollToDiv('keyboard-blog-div-gettingstarted')">1.1. Getting Started</h3>
-                            <!--
                             <h3 class="unselectable add-indent click" onclick="scrollToDiv('keyboard-blog-div-kbdlayout')">1.2. Designing Keyboard Layout</h3>
-                            -->
                         </section>
                     </div>
                 </div>
