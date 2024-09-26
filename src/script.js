@@ -134,89 +134,71 @@ function scrollToDiv(div, color) {
     }
     document.getElementById(div).scrollIntoView({ behavior: 'smooth' });
 }
-/*TODO: add url handler for SPA!!!!
-    const urlHandler = async () => {
+function urlHandler() {
     var location = window.location.pathname;
     if (location.length == 0) {
         location = "/";
     }
-    const route = routes[location] || routes["404"]
-    const html = await fetch(route.file).then((response) => response.text());
-    document.getElementById("container").innerHTML = html
+    switch (location) {
+        case "/home":
+            toggle(1);
+            break;
+        case "/journal":
+            toggle(2);
+            break;
+        case "/blog":
+            toggle(3);
+            break;
+        case "/projects":
+            toggle(4);
+            break;
+    }
+    var route = routes[location] || routes["404"];
     document.title = route.title;
-    document.querySelector("meta[name='description']").setAttribute("content", route.description);
 }
-
-const route = (event) => {
+var route = function (event) {
     event = event || window.event;
     event.preventDefault();
     window.history.pushState({}, "", event.target.href);
     urlHandler();
-}
-
-document.addEventListener("click", (e) => {
-    const { target } = e;
-    if (!target.matches("div a")) {
-        return;
-    }
-    e.preventDefault();
-    route();
-});
-
+};
 window.onpopstate = urlHandler;
-window.route = route;
 urlHandler();
-*/
-/*TODO: add urlHash for section jumping
-window.addEventListener("hashchange", urlHandler);
-urlHandler();
-
-function csjoHash() {
-  if (window.location.hash) {
-    var hash = location.hash.substr(1);
-
-    if (hash === "top") {
-      window.scrollTo(0,0);
-      window.history.pushState({}, null, window.location.href.substr(-4););
-    }
-  }
-}*/
-/*
-    const routes = {
+var routes = {
     404: {
         file: "",
         title: "Jai @404",
+        html: "select",
         deets: "Page Not Found",
     },
     "/": {
         file: "",
         title: "Jai @home",
+        html: "home",
         deets: "Home",
     },
     "/home": {
         file: "",
         title: "Jai @home",
-        deets: "Also Home",
+        html: "home",
+        deets: "Home",
     },
-    "/about-me": {
+    "/journal": {
         file: "",
-        title: "Jai @abtme",
-        deets: "About Me",
+        title: "Jai @cs",
+        html: "csjournal",
+        deets: "CompSci Journal"
     },
-    "/cs-journal": {
+    "/blog": {
         file: "",
-        title: "Jai @csjo",
-        deets: "CompSci Journal",
-    },
-    "/dev-blog": {
-        file: "",
-        title: "Jai @devb",
+        title: "Jai @blog",
+        html: "devblog",
         deets: "Development Blog",
     },
     "/projects": {
         file: "",
-        title: "Jai @proj",
+        title: "Jai @projects",
+        html: "projects",
         deets: "Projects",
     }
-}
-*/
+};
