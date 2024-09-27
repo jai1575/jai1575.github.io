@@ -146,16 +146,16 @@ function urlHandler() {
         location = "/";
     }
     switch (location) {
-        case "/home":
+        case "home":
             toggle(1);
             break;
-        case "/journal":
+        case "journal":
             toggle(2);
             break;
-        case "/blog":
+        case "blog":
             toggle(3);
             break;
-        case "/projects":
+        case "projects":
             toggle(4);
             break;
     }
