@@ -139,7 +139,7 @@ function scrollToDiv(div, color?) {
   }
   document.getElementById(div).scrollIntoView({ behavior: 'smooth' });
 }
-/*
+
 function urlHandler() {
     var location = window.location.pathname;
     if (location.length == 0) {
@@ -163,52 +163,51 @@ function urlHandler() {
     document.title = route.title;
 }
 
-const route = (event) => {
-    event = event || window.event;
-    event.preventDefault();
-    window.history.pushState({}, "", event.target.href);
-    urlHandler();
+const route = (event) => { 
+  event = event || window.event;
+  event.preventDefault();
+  window.history.pushState({}, "", event.target.href);
+  urlHandler();
 }
 
 window.onpopstate = urlHandler;
 urlHandler();
 
 const routes = {
-    404: {
-        file: "",
-        title: "Jai @404",
-        html: "select",
-        deets: "Page Not Found",
-    },
-    "/": {
-        file: "",
-        title: "Jai @home",
-        html: "home",
-        deets: "Home",
-    },
-    "/home": {
-        file: "",
-        title: "Jai @home",
-        html: "home",
-        deets: "Home",
-    },
-    "/journal": {
-        file: "",
-        title: "Jai @cs",
-        html: "csjournal",
-        deets: "CompSci Journal"
-    },
-    "/blog": {
-        file: "",
-        title: "Jai @blog",
-        html: "devblog",
-        deets: "Development Blog",
-    },
-    "/projects": {
-        file: "",
-        title: "Jai @projects",
-        html: "projects",
-        deets: "Projects",
-    }
+  404: {
+    file: "",
+    title: "Jai @404",
+    html: "select",
+    deets: "Page Not Found",
+  },
+  "/": {
+    file: "",
+    title: "Jai @home",
+    html: "home",
+    deets: "Home",
+  },
+  "/home": {
+    file: "",
+    title: "Jai @home",
+    html: "home",
+    deets: "Home",
+  },
+  "/journal": {
+    file: "",
+    title: "Jai @cs",
+    html: "csjournal",
+    deets: "CompSci Journal"
+  },
+  "/blog": {
+    file: "",
+    title: "Jai @blog",
+    html: "devblog",
+    deets: "Development Blog",
+  },
+  "/projects": {
+    file: "",
+    title: "Jai @projects",
+    html: "projects",
+    deets: "Projects",
+  }
 }
-*/
