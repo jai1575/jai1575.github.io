@@ -140,6 +140,51 @@ function scrollToDiv(div, color?) {
   document.getElementById(div).scrollIntoView({ behavior: 'smooth' });
 }
 
+const routes = {
+  "/": { title: "Jai @home", render: home },
+  "/home": { title: "Jai @home", render: home },
+  "/blog": { title: "Jai @blog", render: blog },
+  "/journal": { title: "Jai @journal", render: journal },
+  "/projects": { title: "Jai @projects", render: projects },
+};
+
+function router() {
+  let page = routes[location.pathname];
+  if (page) {
+    document.title = page.title;
+    document.getElementById().innerHTML = page.render();
+    switch (page.render){
+      case home:
+        toggle(1);
+        break;
+      case journal:
+        toggle(2);
+        break;
+      case blog:
+        toggle(3);
+        break;
+      case projects:
+        toggle(4);
+        break;
+    }
+  } else {
+    history.replaceState("", "", "/");
+    router();
+  }
+};
+
+window.addEventListener("click", e => {
+  if (e.target.matches("[data-link]")) {
+    e.preventDefault();
+    history.pushState("", "", e.target.href);
+    router();
+  }
+});
+
+window.addEventListener("popstate", router);
+window.addEventListener("DOMContentLoaded", router);
+
+/*
 function urlHandler() {
     var location = window.location.pathname;
     if (location.length == 0) {
@@ -211,3 +256,4 @@ const routes = {
     deets: "Projects",
   }
 }
+*/
