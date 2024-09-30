@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript" src="./src/script.js"></script>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="image/icon_white.png">
+        <title>Jai</title>
+    </head>
+
+    <body>
+        <div id="main-items">
+            <div id="mobile-menu-items">
+                <div class="mobile-button" id="csjournal-button-men" onclick="toggle(2)">󰂾</div> 
+                <div class="mobile-button" id="devblog-button-men" onclick="toggle(3)">󱃖</div> 
+                <div class="mobile-button" id="projects-button-men" onclick="toggle(4)"></div> 
+            </div>
+            <nav class="unselectable">
+                <div id="icon-items">
+                    <a id="home-icon-items" onclick="toggle(1,'home-button')">
+                        <img src="image/icon_white.png">
+                    </a>
+                </div>
+                <div id="menu-items">
+                    <div class="tablet-menu-items">
+                        <div class="mobile-button" id="home-button-mob" href="/home"></div> 
+                        <div class="mobile-button" id="csjournal-button-mob" href="/journal">󰂾</div> 
+                        <div class="mobile-button" id="devblog-button-mob" href="/blog">󱃖</div> 
+                        <div class="mobile-button" id="projects-button-mob" href="/projects"></div> 
+                        <div class="mobile-button" id="menu-button-mob" onclick="toggleMenu()"></div> 
+                    </div>
+                    <div class="desktop-menu-items">
+                        <div class="desktop-button" id="home-button" href="/home">*Home</div> 
+                        <div class="desktop-button" id="csjournal-button" href="/journal">CS Journal</div> 
+                        <div class="desktop-button" id="devblog-button" href="/blog">Blog</div> 
+                        <div class="desktop-button" id="projects-button" href="/projects">Projects</div>
+                    </div>
+                </div>
+                <div id="link-items">
+                    <a id="github-link-items" href="https://github.com/jai1575" target="blank">
+                        <img src="image/github_white.png">
+                    </a>
+                    <a id="youtube-link-items" href="https://youtube.com/@jai2000" target="blank">
+                        <img src="image/youtube_white.png">
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div id="container">
+            <div id="home" class="column">
+                <main id="home-container">
+                    <header id="home-headline">
+                        <div id="home-headline-container">
+                            <div class="photo-home">
+                                <img src="image/icon.png" class="img-photo-home"></img>
+                            </div>
+                            <div class="name-home">
+                                <h1 class="h1-name-home">Jai Gunewardena</h1>
+                                <h2 class="h2-name-home">Software Engineer</h2>
+                                <hr>
+                            </div>
+                            <div class="contact-home">
+                                <div class="div-contact-home">
+                                    <h3 class="h3-div-contact-home">Email:</h3>
+                                    <a class="a-div-contact-home" href="mailto:jai1575@proton.me">jai1575@proton.me</a>
+                                    <a class="a-div-contact-home-extra" href="mailto:jai1575@proton.me">Business Inquiries Only</a>
+                                    <h3 class="h3-div-contact-home">Signal:</h3>
+                                    <a class="a-div-contact-home" href="https://signal.org/download" target="_blank">aox.37</a>
+                                    <a class="a-div-contact-home-extra" href="https://signal.org/download" target="_blank">Reach Me Anytime</a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <article id="home-midline">
+                        <div id="home-midline-container" class="autoscroll-parent-anim">
+                            <div id="skills">
+                                <h2 class="skills-h2">Software Engineer</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Apps</h3> </li>
+                                    <li> <h3 class="skills-h3">Web Apps</h3> </li>
+                                    <li> <h3 class="skills-h3">APIs</h3> </li>
+                                    <li> <h3 class="skills-h3">Libraries</h3> </li>
+                                    <li> <h3 class="skills-h3">CLI Tools</h3> </li>
+                                    <li> <h3 class="skills-h3">Problem Solving</h3> </li>
+                                    <li> <h3 class="skills-h3">Websites</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Information Technology</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Communication</h3> </li>
+                                    <li> <h3 class="skills-h3">Repairs</h3> </li>
+                                    <li> <h3 class="skills-h3">Basic Security</h3> </li>
+                                    <li> <h3 class="skills-h3">Problem Solving</h3> </li>
+                                    <li> <h3 class="skills-h3">CLI Master</h3> </li>
+                                    <li> <h3 class="skills-h3">Networking</h3> </li>
+                                    <li> <h3 class="skills-h3">General Knowledge</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Background</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Computer Science</h3> </li>
+                                    <li> <h3 class="skills-h3">Project Management</h3> </li>
+                                    <li> <h3 class="skills-h3">Business Management</h3> </li>
+                                    <li> <h3 class="skills-h3">Award Winner</h3> </li>
+                                    <li> <h3 class="skills-h3">Philosophy</h3> </li>
+                                    <li> <h3 class="skills-h3">Languages:</h3> </li>
+                                    <li> <h3 class="skills-h3"> 󰌛   󰢱    󰛦</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Fullstack Developer</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Backend</h3> </li>
+                                    <li> <h3 class="skills-h3">Frontend</h3> </li>
+                                    <li> <h3 class="skills-h3">Tailored UX</h3> </li>
+                                    <li> <h3 class="skills-h3">SSH, HTTP, HTTPS...</h3> </li>
+                                    <li> <h3 class="skills-h3">CLI tools</h3> </li>
+                                    <li> <h3 class="skills-h3">Server-side</h3> </li>
+                                    <li> <h3 class="skills-h3">Client-side</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Hardware Engineering</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Microprocessing</h3> </li>
+                                    <li> <h3 class="skills-h3">Basic Automation</h3> </li>
+                                    <li> <h3 class="skills-h3">Low-level Programming</h3> </li>
+                                    <li> <h3 class="skills-h3">Low-level Understanding</h3> </li>
+                                    <li> <h3 class="skills-h3">Hardware Repair</h3> </li>
+                                    <li> <h3 class="skills-h3">Serial Handling</h3> </li>
+                                    <li> <h3 class="skills-h3">Decoding</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Entrepreneur</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Competitive</h3> </li>
+                                    <li> <h3 class="skills-h3">Innovative</h3> </li>
+                                    <li> <h3 class="skills-h3">Educated Risk-taker</h3> </li>
+                                    <li> <h3 class="skills-h3">Hardworking</h3> </li>
+                                    <li> <h3 class="skills-h3">Persevering</h3> </li>
+                                    <li> <h3 class="skills-h3">Adaptable</h3> </li>
+                                    <li> <h3 class="skills-h3">Self-Motivated</h3> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="home-midline-container" class="autoscroll-parent-anim">
+                            <div id="skills">
+                                <h2 class="skills-h2">Software Engineer</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Apps</h3> </li>
+                                    <li> <h3 class="skills-h3">Web Apps</h3> </li>
+                                    <li> <h3 class="skills-h3">APIs</h3> </li>
+                                    <li> <h3 class="skills-h3">Libraries</h3> </li>
+                                    <li> <h3 class="skills-h3">CLI Tools</h3> </li>
+                                    <li> <h3 class="skills-h3">Problem Solving</h3> </li>
+                                    <li> <h3 class="skills-h3">Websites</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Information Technology</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Communication</h3> </li>
+                                    <li> <h3 class="skills-h3">Repairs</h3> </li>
+                                    <li> <h3 class="skills-h3">Basic Security</h3> </li>
+                                    <li> <h3 class="skills-h3">Problem Solving</h3> </li>
+                                    <li> <h3 class="skills-h3">CLI Master</h3> </li>
+                                    <li> <h3 class="skills-h3">Networking</h3> </li>
+                                    <li> <h3 class="skills-h3">General Knowledge</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Background</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Computer Science</h3> </li>
+                                    <li> <h3 class="skills-h3">Project Management</h3> </li>
+                                    <li> <h3 class="skills-h3">Business Management</h3> </li>
+                                    <li> <h3 class="skills-h3">Award Winner</h3> </li>
+                                    <li> <h3 class="skills-h3">Philosophy</h3> </li>
+                                    <li> <h3 class="skills-h3">Languages:</h3> </li>
+                                    <li> <h3 class="skills-h3"> 󰌛   󰢱    󰛦</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Fullstack Developer</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Backend</h3> </li>
+                                    <li> <h3 class="skills-h3">Frontend</h3> </li>
+                                    <li> <h3 class="skills-h3">Tailored UX</h3> </li>
+                                    <li> <h3 class="skills-h3">SSH, HTTP, HTTPS...</h3> </li>
+                                    <li> <h3 class="skills-h3">CLI tools</h3> </li>
+                                    <li> <h3 class="skills-h3">Server-side</h3> </li>
+                                    <li> <h3 class="skills-h3">Client-side</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Hardware Engineering</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Microprocessing</h3> </li>
+                                    <li> <h3 class="skills-h3">Basic Automation</h3> </li>
+                                    <li> <h3 class="skills-h3">Low-level Programming</h3> </li>
+                                    <li> <h3 class="skills-h3">Low-level Understanding</h3> </li>
+                                    <li> <h3 class="skills-h3">Hardware Repair</h3> </li>
+                                    <li> <h3 class="skills-h3">Serial Handling</h3> </li>
+                                    <li> <h3 class="skills-h3">Decoding</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Entrepreneur</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Competitive</h3> </li>
+                                    <li> <h3 class="skills-h3">Innovative</h3> </li>
+                                    <li> <h3 class="skills-h3">Educated Risk-taker</h3> </li>
+                                    <li> <h3 class="skills-h3">Hardworking</h3> </li>
+                                    <li> <h3 class="skills-h3">Persevering</h3> </li>
+                                    <li> <h3 class="skills-h3">Adaptable</h3> </li>
+                                    <li> <h3 class="skills-h3">Self-Motivated</h3> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="home-midline-container" class="autoscroll-parent-anim">
+                            <div id="skills">
+                                <h2 class="skills-h2">Software Engineer</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Apps</h3> </li>
+                                    <li> <h3 class="skills-h3">Web Apps</h3> </li>
+                                    <li> <h3 class="skills-h3">APIs</h3> </li>
+                                    <li> <h3 class="skills-h3">Libraries</h3> </li>
+                                    <li> <h3 class="skills-h3">CLI Tools</h3> </li>
+                                    <li> <h3 class="skills-h3">Problem Solving</h3> </li>
+                                    <li> <h3 class="skills-h3">Websites</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Information Technology</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Communication</h3> </li>
+                                    <li> <h3 class="skills-h3">Repairs</h3> </li>
+                                    <li> <h3 class="skills-h3">Basic Security</h3> </li>
+                                    <li> <h3 class="skills-h3">Problem Solving</h3> </li>
+                                    <li> <h3 class="skills-h3">CLI Master</h3> </li>
+                                    <li> <h3 class="skills-h3">Networking</h3> </li>
+                                    <li> <h3 class="skills-h3">General Knowledge</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Background</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Computer Science</h3> </li>
+                                    <li> <h3 class="skills-h3">Project Management</h3> </li>
+                                    <li> <h3 class="skills-h3">Business Management</h3> </li>
+                                    <li> <h3 class="skills-h3">Award Winner</h3> </li>
+                                    <li> <h3 class="skills-h3">Philosophy</h3> </li>
+                                    <li> <h3 class="skills-h3">Languages:</h3> </li>
+                                    <li> <h3 class="skills-h3"> 󰌛   󰢱    󰛦</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Fullstack Developer</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Backend</h3> </li>
+                                    <li> <h3 class="skills-h3">Frontend</h3> </li>
+                                    <li> <h3 class="skills-h3">Tailored UX</h3> </li>
+                                    <li> <h3 class="skills-h3">SSH, HTTP, HTTPS...</h3> </li>
+                                    <li> <h3 class="skills-h3">CLI tools</h3> </li>
+                                    <li> <h3 class="skills-h3">Server-side</h3> </li>
+                                    <li> <h3 class="skills-h3">Client-side</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Hardware Engineering</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Microprocessing</h3> </li>
+                                    <li> <h3 class="skills-h3">Basic Automation</h3> </li>
+                                    <li> <h3 class="skills-h3">Low-level Programming</h3> </li>
+                                    <li> <h3 class="skills-h3">Low-level Understanding</h3> </li>
+                                    <li> <h3 class="skills-h3">Hardware Repair</h3> </li>
+                                    <li> <h3 class="skills-h3">Serial Handling</h3> </li>
+                                    <li> <h3 class="skills-h3">Decoding</h3> </li>
+                                </ul>
+                            </div>
+                            <div id="skills">
+                                <h2 class="skills-h2">Entrepreneur</h2>
+                                <ul class="skills-ul">
+                                    <li> <h3 class="skills-h3">Competitive</h3> </li>
+                                    <li> <h3 class="skills-h3">Innovative</h3> </li>
+                                    <li> <h3 class="skills-h3">Educated Risk-taker</h3> </li>
+                                    <li> <h3 class="skills-h3">Hardworking</h3> </li>
+                                    <li> <h3 class="skills-h3">Persevering</h3> </li>
+                                    <li> <h3 class="skills-h3">Adaptable</h3> </li>
+                                    <li> <h3 class="skills-h3">Self-Motivated</h3> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </body>
+</html>

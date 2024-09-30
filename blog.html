@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript" src="./src/script.js"></script>
+    <head> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="image/icon_white.png">
+        <title>Jai</title>
+    </head>
+
+    <body>
+        <div id="main-items">
+            <div id="mobile-menu-items">
+                <div class="mobile-button" id="csjournal-button-men" href="/journal">󰂾</div> 
+                <div class="mobile-button" id="devblog-button-men" href="/blog">󱃖</div> 
+                <div class="mobile-button" id="projects-button-men" href="/projects"></div> 
+            </div>
+            <nav class="unselectable">
+                <div id="icon-items">
+                    <a id="home-icon-items" onclick="toggle(1,'home-button')">
+                        <img src="image/icon_white.png">
+                    </a>
+                </div>
+                <div id="menu-items">
+                    <div class="tablet-menu-items">
+                        <div class="mobile-button" id="home-button-mob" href="/home"></div> 
+                        <div class="mobile-button" id="csjournal-button-mob" href="/journal">󰂾</div> 
+                        <div class="mobile-button" id="devblog-button-mob" href="/blog">󱃖</div> 
+                        <div class="mobile-button" id="projects-button-mob" href="/projects"></div> 
+                        <div class="mobile-button" id="menu-button-mob" onclick="toggleMenu()"></div> 
+                    </div>
+                    <div class="desktop-menu-items">
+                        <div class="desktop-button" id="home-button" href="/home">*Home</div> 
+                        <div class="desktop-button" id="csjournal-button" href="/journal">CS Journal</div> 
+                        <div class="desktop-button" id="devblog-button" href="/blog">Blog</div> 
+                        <div class="desktop-button" id="projects-button" href="/projects">Projects</div> 
+                    </div>
+                </div>
+                <div id="link-items">
+                    <a id="github-link-items" href="https://github.com/jai1575" target="blank">
+                        <img src="image/github_white.png">
+                    </a>
+                    <a id="youtube-link-items" href="https://youtube.com/@jai2000" target="blank">
+                        <img src="image/youtube_white.png">
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div id="container">
+            <div id="devblog" class="column" style="display: none;">
+                <main id="devblog-container">
+                    <header class="unselectable" id="h1-blog-top">
+                        <h1>
+                            <br>
+                            <strong>Blog Index:</strong>
+                        </h1>
+                      <br>
+                    </header>
+                    <br>
+                    <article class="index-article-blog" id="index-keyboard-blog" onclick="toggleOnlyElement('keyboard-blog', 'index-keyboard-toggle', ' Custom Keyboard', ' Custom Keyboard')">
+                        <h2 class="unselectable index-article-title" id="index-keyboard-toggle"> Custom Keyboard</h3>
+                        <h3 class="unselectable index-article-overview" id="index-keyboard-overview">Custom unibody split ortholinear keyboard</h4>
+                        <h4 class="unselectable index-article-language" id="index-keyboard-language">
+                            Using:
+                            <span class="language"><a href="https://www.keyboard-layout-editor.com" target="_blank">KBD Layout Editor</a></span>
+                            <span class="language"><a href="https://qmk.fm" target="_blank">QMK/VIA</a></span>
+                            <span class="language"><a href="https://nicekeyboards.com/nice-nano" target="_blank">Nice Nano Microcontroller</a></span>
+                        </h4>
+                        <h4 class="unselectable index-article-date" id="index-keyboard-date">Date of first post: 1726464390 ~ unix timestamp</h4>
+                    </article>
+                </main>
+                <div class="blog-container-container">
+                    <!--
+                    <article class="index-article-blog" id="index-tui-blog" onclick="toggleOnlyElement('tui-blog', 'index-tui-toggle', ' First TUI', ' First TUI')">
+                        <h2 class="unselectable index-article-title" id="index-tui-toggle"> First TUI</h3>
+                        <h3 class="unselectable index-article-overview" id="index-tui-overview">Development blog of my first TUI application</h4>
+                        <h4 class="unselectable index-article-language" id="index-tui-language">Written in: <span class="language"><a href="https://rust-lang.org" target="_blank">Rust</a></span></h4>
+                        <h4 class="unselectable index-article-date" id="index-tui-date">Date of first post: TBD</h4>
+                    </article>
+                    <div class="blog-container" id="tui-blog" style="display: none;">
+                        <section class="blog-section">
+                            <h1>test</h1>
+                        </section>
+                    </div>
+                    -->
+                    <div class="blog-container" id="keyboard-blog" style="display: none;">
+                        <section class="blog-section">
+                            <div class="blog-div" id="keyboard-blog-div-foundation">
+                                <div class="blog-div" id="keyboard-blog-div-gettingstarted">
+                                    <h1 style="margin: 0em 0em 1em 0em;">Getting started</h1>
+                                    <p class="no-indent">First we'll look into the process of keyboard manufacturing; this will serve as a guide for our development. Looking into the manufacturing process can give us insight so we can plan thoughtfully.</p>
+                                    <p class="add-half bold">Keyboard manufacturing process:</p>
+                                    <ul>
+                                        <p class="no-indent"><span class="bold">1.</span> Keyboard Layout</p>
+                                        <p class="no-indent"><span class="bold">2.</span> Plate Position</p>
+                                        <p class="no-indent"><span class="bold">3.</span> Firmware</p>
+                                        <p class="no-indent"><span class="bold">4.</span> PCB Design</p>
+                                        <p class="no-indent"><span class="bold">5.</span> 3D Modeling</p>
+                                        <p class="no-indent"><span class="bold">6.</span> Assembly</p>
+                                    </ul>
+                                    <p class="add-half">In this blog, I'll be making a split unibody ortholinear keyboard. Making a keyboard that suits you is a major purpose of this project. It is important that you make a keyboard with your priorities in mind. Here are some factors you should take into account.</p>
+                                    <p class="add-half bold">Considerations:</p>
+                                    <ul>
+                                        <li>What <span class="bold">features</span> would you'd like to see?</li>
+                                        <li class="add-indent-half">What <span class="bold">problems</span> do you have with your <span class="bold">current keyboard</span>, and how can you fix them?</li>
+                                        <li>What <span class="bold">layout</span> suits you?</li>
+                                        <ul>
+                                            <li class="add-indent-half">Split</li>
+                                            <li class="add-indent-half">Ortholinear</li>
+                                            <li class="add-indent-half">Staggered</li>
+                                            <li class="add-indent-half">Column staggered</li>
+                                        </ul>
+                                        <li><span class="bold">Looks?</span> What do you consider a good-looking keyboard to be?</li>
+                                        <ul>
+                                            <li class="add-indent-half">What <span class="bold">materials</span> do you want to be used?</li>
+                                            <p class="no-indent">These will contribute to the perceived quality and feel of the keyboard.</p>
+                                        </ul>
+                                        <li>How do you want the <span class="bold">keyboard</span> to be <span class="bold">assembled</span>? There are many ways to mount the keyboard PCB, plate, case, and many other optional parts. How do you want to mount them?</li>
+                                    </ul>
+                                    <p class="no-indent">I'd also like to bring attention to the various sources used:</p>
+                                    <li><a href="https://www.tech-sparks.com/pcb-design-tutorial/" target="_blank" class="link">PCB Layout Design for Beginners</a></li>
+                                    <li><a href="https://www.tech-sparks.com/diy-mechanical-keyboard/" target="_blank" class="link">DIY Mechanical Keyboard</a></li>
+                                    <li><a href="https://goblintechkeys.com/blogs/news/building-your-own-custom-mechanical-keyboard-from-barebone-kit" target="_blank" class="link">Basic Custom Keyboard Guide from Barebone Kit</a></li>
+                                    <li><a href="https://www.tech-sparks.com/keyboard-pcb-design/" target="_blank" class="link">Keyboard PCB Design</a></li>
+                                </div>
+                                <hr>
+                                <div class="blog-div" id="keyboard-blog-div-kbdlayout">
+                                    <h1 style="margin: 0em 0em 1em 0em;">Designing Keyboard Layout</h1>
+                                    <p class="no-indent">Making the keyboard layout can be done in quite a few ways.</p>
+                                    <p class="add-indent-half bold">Here are some:</p>
+                                    <ul>
+                                        <li class="no-indent"><a class="link" href="https://docs.qmk.fm/feature_layouts" target="_blank">QMK with C</a></li>
+                                        <li class="no-indent"><a class="link" href="https://www.caniusevia.com/docs/layouts/" target="_blank">VIA with JSON</a></li>
+                                        <li class="no-indent"><a class="link" href="http://www.keyboard-layout-editor.com/#/" target="_blank">Keyboard Layout Editor Website</a></li>
+                                        <li class="no-indent"><a class="link" href="https://docs.qmk.fm/#/keycodes_basic" target="_blank">Keycodes both for QMK and VIA</a></li>
+                                    </ul>
+                                    <p class="no-indent">For our keyboard we will use keyboard-layout-editor.com the third link listed. By navigating to the raw data tab we can edit the layout directly through a simple JSON like language.</p>
+                                    <p class="no-indent">We use various html keycodes for special characters like arrow and media icons. The language is well documented and can be found @ <a class="link" href="https://github.com/ijprest/keyboard-layout-editor/wiki/serialized-data-format" target="_blank">github wiki (docs)</a></p>
+                                    <p>For this keyboard we will use a customized 60 percent split layout.</p>
+                                    <li class="add-indent-half bold">Raw Data Example:</li>
+                                    <ul>
+                                        <p class="code-block">[<br>  {r:8,rx:0.45}, {a:1}, "~\n`\n\n\n\nesc", "!\n1\n\n\n\nF1", "@\n2\n\n\n\nF2", "#\n3\n\n\n\nF3", "$\n4\n\n\n\nF4", "%\n5\n\n\n\nF5" <br>],<br>[<br>  {r:-8,rx:7,ry:0.85}, {a:1}, "^\n6\n\n\n\nF6", "&\n7\n\n\n\nF7", "*\n8\n\n\n\nF8", "(\n9\n\n\n\nF9", ")\n0\n\n\n\nF10", "_\n-\n\n\n\nF11", "+\n=\n\n\n\nF12"<br>]</p>
+                                        <li>The keyboard is tilted with <span class="language">{<span class="whitespace-indent bold">r:8</span>,rx:0.45}</span></li>
+                                        <p>Every quote <span class="language">""</span> defines one key in a row. Rows are defined with brackets <span class="language">[ ]</span> </p>
+                                        <li>Here is an example of the syntax</li>
+                                        <p class="code-block">[<br> "key one", "key two", "key three"<br>],<br>[<br> "key one of second row", "point made" <br>]</p>
+                                        <p><span class="language">rx</span> Changes the offset on the x axis. <span class="language">r</span> Changes degree of tilt. The position of the letters contained by quotes is changed with: <span class="language">{a:1}</span></p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="blog-toc">
+                            <a onclick="scrollToDiv('h1-blog-top')" class="unselectable font-large click">Back To Top </a>
+                            <h1 class="unselectable add-half">Table Of Contents</h1>
+                            <hr class="blog-hr">
+                            <h2 class="unselectable add-indent-half click" onclick="scrollToDiv('keyboard-blog-div-foundation')">1. Foundation</h2>
+                            <h3 class="unselectable add-indent click" onclick="scrollToDiv('keyboard-blog-div-gettingstarted')">1.1. Getting Started</h3>
+                            <h3 class="unselectable add-indent click" onclick="scrollToDiv('keyboard-blog-div-kbdlayout')">1.2. Designing Keyboard Layout</h3>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </body>
+</html>
