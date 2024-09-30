@@ -141,11 +141,11 @@ function scrollToDiv(div, color?) {
 }
 
 const routes = {
-  "/": { title: "Jai @home", render: home },
-  "/home": { title: "Jai @home", render: home },
-  "/blog": { title: "Jai @blog", render: blog },
-  "/journal": { title: "Jai @journal", render: journal },
-  "/projects": { title: "Jai @projects", render: projects },
+  "/": { title: "Jai @home", render: "home" },
+  "/home": { title: "Jai @home", render: "home" },
+  "/blog": { title: "Jai @blog", render: "blog" },
+  "/journal": { title: "Jai @journal", render: "journal" },
+  "/projects": { title: "Jai @projects", render: "projects" },
 };
 
 function router() {
@@ -154,16 +154,16 @@ function router() {
     document.title = page.title;
     document.getElementById().innerHTML = page.render();
     switch (page.render){
-      case home:
+      case "home":
         toggle(1);
         break;
-      case journal:
+      case "journal":
         toggle(2);
         break;
-      case blog:
+      case "blog":
         toggle(3);
         break;
-      case projects:
+      case "projects":
         toggle(4);
         break;
     }
