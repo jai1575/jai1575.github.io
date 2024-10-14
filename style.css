@@ -484,6 +484,21 @@ nav {
   margin: 0em 0.3em;
 }
 
+.add-inner {
+    padding: 1em;
+}
+
+.add-inner-half {
+    padding: 0.5em;
+}
+
+.flex-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .click {
   cursor: pointer;
 }
