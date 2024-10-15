@@ -351,8 +351,51 @@
                                         <p class="no-indent"><span class="bold">5.</span> 3D Modeling</p>
                                         <p class="no-indent"><span class="bold">6.</span> Assembly</p>
                                     </ul>
-                                    <p class="add-half">In this blog, I'll be making a split unibody ortholinear keyboard. Making a keyboard that suits you is a major purpose of this project. It is important that you make a keyboard with your priorities in mind. Here are some factors you should take into account.</p>
                                     <h3 class="add-half bold">Considerations:</h3>
+                                    <p>There are many types of key layouts we can use here are some:</p>
+                                    <ul>
+                                        <li>Qwerty</li>
+                                        <p class="code-block flex-align add-inner-half">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/KB_United_States.svg/660px-KB_United_States.svg.png"></img>
+                                            Qwerty is the standard layout and was designed to better suit the typewriter and the typist. 32% of typing is done on the home row.
+                                        </p>
+                                        <p>Dvorak</p>
+                                        <p class="code-block flex-align add-inner-half">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/KB_United_States_Dvorak.svg/660px-KB_United_States_Dvorak.svg.png"></img>
+                                            Dvorak is designed to increase typing speed and comfort and decrease errors. Dvorak allows 70% of typing to be done on the home row.
+                                        </p>
+                                        <p>Colemak</p>
+                                        <p class="code-block flex-align add-inner-half">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/KB_US-Colemak.svg/660px-KB_US-Colemak.svg.png"></img>
+                                            You might notice there are two backspaces and the layout excludes the caps lock key. Colemak is based upon the Qwerty layout, designed with the same intentions as the Dvorak layout, making it easier to switch for those accustomed to the Qwerty layout.
+                                        </p>
+                                        <p>Workman</p>
+                                        <p class="code-block flex-align add-inner-half">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/KB_English_Workman.svg/660px-KB_English_Workman.svg.png"></img>
+                                            Workman along with the rest of these are supported out of the box on most Linux systems. The highlighted keys represent the homerow which has been adjusted for the typist. The Workman layout employs a different method for increasing typing speed and comfort.
+                                        </p>
+                                    </ul>
+                                    <p>Keyboard Sizes:</p>
+                                    <ul>
+                                        <p class="code-block flex-align add-inner-half">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/ANSI_Keyboard_Layout_Diagram_with_Form_Factor.svg/660px-ANSI_Keyboard_Layout_Diagram_with_Form_Factor.svg.png"></img>
+                                            The diagram also stolen from Wikimedia, shows the various keyboard sizes in ANSI.
+                                        </p>
+                                    </ul>
+                                    <!-- 
+                                    <p>Key Arrangement (Staggering):</p>
+                                    <ul>
+                                        <p>Uniform Stagger</p>
+                                        <p class="code-block flex-align add-inner-half">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/KB_English_Workman.svg/660px-KB_English_Workman.svg.png"></img>
+                                            This is the standard form of staggering carried to modern keyboards from the classic typewriter. Typewriters letter hammers had to be separated so they wouldn't get jammed; born out of this is the uniformly staggered keyboard. Also known as equal stagger the keys are shifted an equal offset from each other, excluding modifier keys, system keys, navigation keys, lock keys, and editing keys.
+                                        </p>
+                                        <p class="code-block flex-align add-inner-half">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/KB_English_Workman.svg/660px-KB_English_Workman.svg.png"></img>
+                                            This is the standard form of staggering carried to modern keyboards from the classic typewriter. Typewriters letter hammers had to be separated so they wouldn't get jammed; born out of this is the uniformly staggered keyboard. Also known as equal stagger the keys are shifted an equal offset from each other, excluding modifier keys, system keys, navigation keys, lock keys, and editing keys.
+                                    </ul>
+                                        TODO: Add more types of staggering -->
+                                    <p class="add-half">In this blog, I'll be making a split unibody ortholinear keyboard. Making a keyboard that suits you is a major purpose of this project. It is important that you make a keyboard with your priorities in mind. Here are some factors you should take into account.</p>
                                     <ul>
                                         <li>What <span class="bold">features</span> would you'd like to see?</li>
                                         <li class="add-indent-half">What <span class="bold">problems</span> do you have with your <span class="bold">current keyboard</span>, and how can you fix them?</li>
@@ -375,6 +418,10 @@
                                     <li><a href="https://www.tech-sparks.com/diy-mechanical-keyboard/" target="_blank" class="link">DIY Mechanical Keyboard</a></li>
                                     <li><a href="https://goblintechkeys.com/blogs/news/building-your-own-custom-mechanical-keyboard-from-barebone-kit" target="_blank" class="link">Basic Custom Keyboard Guide from Barebone Kit</a></li>
                                     <li><a href="https://www.tech-sparks.com/keyboard-pcb-design/" target="_blank" class="link">Keyboard PCB Design</a></li>
+                                    <li><a href="https://en.wikipedia.org/wiki/Keyboard_layout" target="_blank" class="link">Wikipedia Keyboard Layout Article</a></li>
+                                    <p>Images and information on keyboard layouts gathered here combined with prior knowledge. There are many other layouts available and a large history. I recommend reading this fascinating page.</p>
+                                    <li><a href="https://en.wikipedia.org/wiki/QWERTY" target="_blank" class="link">Wikipedia QWERTY Layout Article</a></li>
+                                    <p>Images and information on the QWERTY keyboard layout gathered here combined with prior knowledge.</p>
                                 </div>
                                 <hr>
                                 <div class="blog-div" id="keyboard-blog-div-kbdlayout">
@@ -500,6 +547,7 @@
                             <h3 class="h3-index-week" id="index-week-ten-oct" onclick="toggleElement('1024W10', 'index-week-ten-oct', ' October, Week Ten', ' October, Week Ten')"> October, Week Ten</h3>
                             <ul class="index" id="1024W10" style="display: none;">
                                 <a class="index-index" onclick="scrollToDiv('101424')">Monday, 14th</a>
+                                <a class="index-index" onclick="scrollToDiv('101524')">Tuesday, 15th</a>
                             </ul>
                         </ul>
                         <br class="unselectable">
@@ -1169,12 +1217,23 @@
                             <li>What is a byte?</li>
                             <li>What is a bit?</li>
                             <li>What is a bit-string?</li>
+                            <li>What is bandwidth?</li>
+                            <li>What are lossless and lossy compression?</li>
+                            <li>What are examples of analog data?</li>
+                            <li>What is an example of a digital data?</li>
                         </ul>
                         <h4 class="answer">Answers:</h4>
                         <ul>
-                            <li>The byte's a group of eight bits</li>
+                            <li>The byte's a group of eight bits.</li>
                             <li>The bit is a binary digit, one or zero.</li>
-                            <li>Bit-strings are continuous strings of bits</li>
+                            <li>Bit-strings are continuous strings of bits.</li>
+                            <li>Bandwidth is the number of bits or bytes that can be transmitted in a fixed amount of time.</li>
+                            <li>Lossless compression has no loss of information, lossy is the antithetical, wherein there is loss of information.</li>
+                            <p>Some examples of analog data are:</p>
+                            <li>A mercury thermometer rises in proportion to the tempurature, accurately representing it with little to no abstraction.</li>
+                            <li>Vinyl records store the audio wave exactly, meaning there is no discrete storage of data; therefore it is analog.</li>
+                            <img src="https://imgs.search.brave.com/8fHnjPaQUngbMcZ83ETfRUNBE1DL8SSAQRwI_yUSpYQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzU3/ZjBiOGM4NTljYzY4/ZmU2YTkwOGZiNy8x/NTYyMDgxMTMwNjYw/LVdVUDhDWk1CWENB/UkpaVUZHVjNZL3Nr/dWxsLW9mLWEtc2tl/bGV0b24td2l0aC1i/dXJuaW5nLWNpZ2Fy/ZXR0ZS1ieS12aW5j/ZW50LXZhbi1nb2do/LWZhbW91cy1hcnQt/aGFuZG1hZGUtb2ls/LXBhaW50aW5nLW9u/LWNhbnZhcy5qcGc" class="img-size-small">
+                            <li>A painting stored digitally, that is still representative of the original.</li>
                         </ul>
                         <h4 class="done">Accomplished:</h4>
                         <p>Using a custom huffman encoding table, the word Doorbell was successfully converted. Afterwhich we used the compression ratio formula to understand how much compression was happening. To find the compression ratio we divide the compressed length by the original length.</p>
@@ -1267,6 +1326,27 @@
                         </ul>
                     </section>
                     <hr>
+                    <!--<section id="101524" class="entry">
+                        <h2 class="journal-h2">Tuesday, 15th, Oct Entry</h2>
+                        <br class="unselectable">
+                        <h3>
+                            <a onclick="scrollToDiv('csjournal-top', '#bbb')" class="unselectable index-nav">Back To Top </a>
+                        </h3>
+                        <br class="unselectable">
+                        <h4 class="objective">Objective:</h4>
+                        <ul>
+                            <li>Complete Chapter 3 Summary Exercises</li>
+                        </ul>
+                        <h4 class="question">Question:</h4>
+                        <ul>
+                            <p><span class="bold">4.</span> </p>
+                            <p><span class="bold">5.</span> </p>
+                        </ul>
+                        <h4 class="answer">Answer:</h4>
+                        <ul>
+                        </ul>
+                    </section>
+                    <hr>-->
                 </main>
             </div>
             <div id="projects" class="column" style="display: none;">
