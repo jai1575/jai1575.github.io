@@ -476,8 +476,8 @@
                             Index:
                         </h1>
                         <br class="unselectable">
-                        <h2 class="h2-index-sect" id="index-sect-one" onclick="toggleElement('S1', 'index-sect-one', ' System Foundation', ' System Foundation')"> System Foundation</h3>
-                        <ul class="index" id="S1" style="display: none;">
+                        <h2 class="h2-index-sect" id="index-sect-one" onclick="toggleElement('S1', 'index-sect-one', ' System Foundation', ' System Foundation')"> System Foundation</h3>
+                        <ul >
                             <h3 class="h3-index-month" id="index-month-aug" onclick="toggleElement('0824', 'index-month-aug', ' August, 2024', ' August, 2024')"> August, 2024</h3>
                             <ul class="index" id="0824" style="display: none;">
                                 <h3 class="h3-index-week" id="index-week-one-aug" onclick="toggleElement('0824W1', 'index-week-one-aug', ' August, Week One', ' August, Week One')"> August, Week One</h3>
@@ -536,8 +536,8 @@
                                     <a class="index-index" onclick="scrollToDiv('093024')">Monday, 30th</a>
                                 </ul>
                             </ul>
-                            <h3 class="h3-index-month" id="index-month-oct" onclick="toggleElement('1024', 'index-month-oct', ' October, 2024', ' October, 2024')"> October, 2024</h3>
-                            <ul class="index" id="1024" style="display: none;">
+                            <h3 class="h3-index-month" id="index-month-oct" onclick="toggleElement('1024', 'index-month-oct', ' October, 2024', ' October, 2024')"> October, 2024</h3>
+                            <ul class="index" id="1024">
                                 <h3 class="h3-index-week" id="index-week-eight-oct" onclick="toggleElement('1024W8', 'index-week-eight-oct', ' October, Week Eight', ' October, Week Eight')"> October, Week Eight</h3>
                                 <ul class="index" id="1024W8" style="display: none;">
                                     <a class="index-index" onclick="scrollToDiv('100224')">Wednesday, 2nd</a>
@@ -551,22 +551,6 @@
                                     <a class="index-index" onclick="scrollToDiv('101424')">Monday, 14th</a>
                                     <a class="index-index" onclick="scrollToDiv('101524')">Tuesday, 15th</a>
                                     <a class="index-index" onclick="scrollToDiv('101624')">Wednesday, 16th</a>
-                                </ul>
-                            </ul>
-                        </ul>
-                        <h2 class="h2-index-sect" id="index-sect-two" onclick="toggleElement('S2', 'index-sect-two', ' Intro to Programming', ' Intro to Programming')"> Intro to Programming</h3>
-                        <ul class="index" id="S2" style="display: none;">
-                            <h3 class="h3-index-month" id="index-month-oct-S2" onclick="toggleElement('1024S2', 'index-month-oct-S2', ' October, 2024', ' October, 2024')"> October, 2024</h3>
-                            <ul class="index" id="1024S2">
-                                <h3 class="h3-index-week" id="index-week-eleven-oct" onclick="toggleElement('1024W11', 'index-week-eleven-oct', ' October, Week Eleven', ' October, Week Eleven')"> October, Week Eleven</h3>
-                                <ul class="index" id="1024W11">
-                                    <!--
-                                    <a class="index-index" onclick="scrollToDiv('102124')">Monday, 21st</a>
-                                    <a class="index-index" onclick="scrollToDiv('102224')">Tuesday, 22nd</a>
-                                    <a class="index-index" onclick="scrollToDiv('102324')">Wednesday, 23rd</a>
-                                    <a class="index-index" onclick="scrollToDiv('102424')">Thursday, 24th</a>
-                                    <a class="index-index" onclick="scrollToDiv('102524')">Friday, 25th</a>
-                                    -->
                                 </ul>
                             </ul>
                         </ul>

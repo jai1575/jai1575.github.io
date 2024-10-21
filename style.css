@@ -414,7 +414,7 @@ nav {
   background-color: #ddd;
 }
 
-.h3-index-month, .h3-index-week {
+.h3-index-month, .h3-index-week, .h2-index-sect {
   background-color: #cdcdcd;
   border: 0.125em solid #ddd;
   transition: 500ms ease-in-out;
