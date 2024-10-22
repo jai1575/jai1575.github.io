@@ -24,7 +24,7 @@
   #home-container { width: 50%; }
   .img-photo-home { width: 10rem; }
   #csjournal-container, #devblog-container { width: 40%; }
-  html, body { font-size: 1.2em; }
+  html, body { font-size: 1.5em; }
   .blog-container-container { margin: -3em 9em; }
   .blog-toc { font-size: 1.1em; position: absolute; right: 0.5em; bottom: 50%; }
 }
@@ -44,7 +44,7 @@
   #home-container { width: 75%; }
   .img-photo-home { width: 10rem; }
   #csjournal-container, #devblog-container { width: 60%; }
-  html, body { font-size: 1.2em; }
+  html, body { font-size: 1.35em; }
   .blog-container-container { margin: -3em 6em; }
   .blog-toc { font-size: 1em; position: absolute; right: 0.5em; bottom: 1em; }
 }
@@ -64,7 +64,7 @@
   #home-container { width: 100%; }
   .img-photo-home { width: 10rem; }
   #csjournal-container, #devblog-container { width: 70%; }
-  html, body { font-size: 1.1em; }
+  html, body { font-size: 1.2em; }
   .blog-container-container { margin: -3em 4em; }
   .blog-toc { font-size: 0.9em; position: absolute; right: 0.5em; bottom: 0.5em; }
 }
@@ -501,6 +501,11 @@ nav {
 
 .img-size-small {
   width: 8em;
+}
+
+.img-dynamic {
+  width: 100%;
+  height: auto;
 }
 
 .click {
