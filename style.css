@@ -26,7 +26,7 @@
   #csjournal-container, #devblog-container { width: 40%; }
   html, body { font-size: 1.5em; }
   .blog-container-container { margin: -3em 9em; }
-  .blog-toc { font-size: 1.1em; position: absolute; right: 0.5em; bottom: 50%; }
+  .blog-toc { font-size: 0.9em; position: absolute; right: 0.5em; bottom: 50%; }
 }
 
 @media only screen and (min-width: 1080px) and (max-width: 2160px){
@@ -46,7 +46,7 @@
   #csjournal-container, #devblog-container { width: 60%; }
   html, body { font-size: 1.35em; }
   .blog-container-container { margin: -3em 6em; }
-  .blog-toc { font-size: 1em; position: absolute; right: 0.5em; bottom: 1em; }
+  .blog-toc { font-size: 0.8em; position: absolute; right: 0.5em; bottom: 1em; }
 }
 
 @media only screen and (min-width: 680px) and (max-width: 1080px) {
@@ -66,7 +66,7 @@
   #csjournal-container, #devblog-container { width: 70%; }
   html, body { font-size: 1.2em; }
   .blog-container-container { margin: -3em 4em; }
-  .blog-toc { font-size: 0.9em; position: absolute; right: 0.5em; bottom: 0.5em; }
+  .blog-toc { font-size: 0.7em; position: absolute; right: 0.5em; bottom: 0.5em; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 680px) {
@@ -93,7 +93,7 @@
   #home-headline-container { flex-direction: column; }
   #csjournal-container, #devblog-container { width: 90%; }
   html, body { font-size: 1.05em; }
-  .blog-toc { font-size: 0.9em; }
+  .blog-toc { font-size: 0.8em; }
   .blog-container { flex-direction: column-reverse; }
   .blog-container-container { margin: -3em 0em; }
 }
